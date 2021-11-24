@@ -1,86 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=popins:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
 html {
   font-size: 62.5%;
   box-sizing: border-box;
 }
 
-*,
-*::before,
-*::after {
-  box-sizing: inherit;
+.fa-bars {
+  font-size: 1.5em;
+  float: right;
 }
 
-body{
-  overflow:hidden;
-}
-  .ham{
-      display:block;
-      cursor:pointer;
-      position: absolute; 
-      top:15px;
-      right:25px;
-      transition: 0.2s  0.1s; 
-
-  }
-
-  
-  nav{
-      flex-direction:column;
-      align-items: flex-start;
-      padding-top: 25px;
-      padding-bottom: 25px;
-  }
-
-  .logo{
-    padding-left:25px;
-    
-  }
-
-  .enlaces-menu{
-    
-      flex-direction:column;
-      justify-content: space-around;
-      align-items:center;
-      height: 92vh;         
-      margin:0;
-      padding:0; 
-      display:none;
-      opacity:0;
-      transition: opacity 5s ease-out;
-      width:100%;
-  
-     
-  }
-  .enlaces-menu li{
-    text-align:center;
-    width:100%;
-    padding:20px;    
+.nombre {
+  font-family: 'Playfair Display', serif;
+  font-size: 4em;
+  font-weight: normal;
+  letter-spacing: 2px;
+  line-height: 1em;
+  font-stretch: expanded;
+  padding: 15% 5% 0 5%;
+  background: transparent;
+  background-color: transparent;
 }
 
+.intro {
+  font-family: 'popins', sans-serif;
+  font-size: 1.2em;
+  font-weight: normal;
+  letter-spacing: 2px;
+  line-height: 1em;
+  font-stretch: expanded;
+  padding: 0 5% 0 5%;
 }
 
-/* Animaciones */
-
-@keyframes muestraMenu {
-from {opacity: 0;}
-to {opacity: 1;}
-}
-
-.enlaces-menu.activado{
-  display:flex; 
-  animation: muestraMenu 350ms ease-in-out both;
-}
-
-.bar1.animado{
-transform: rotate(-45deg) translate(-10px, 8px);
-}
-
-.bar2.animado{
-opacity: 0;
-}
-.bar3.animado{
-transform: rotate(45deg) translate(-10px, -8px);
-}
-
-.ham.girar:hover{
- transform:rotate(360deg);
+header {
+  background-image: url(images/image_geometry_1.png);
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: left top;
+  background-clip: auto;
 }
