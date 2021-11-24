@@ -4,11 +4,18 @@
 html {
   font-size: 62.5%;
   box-sizing: border-box;
+  background-image: url("landing.png");
+  background-repeat: no-repeat;
+  background-size: 35%;
+  background-position: left top;
 }
 
 .fa-bars {
-  font-size: 1.5em;
-  float: right;
+  position: inherit;
+  display: flex;
+  font-size: 2em;
+  justify-content: end;
+  top: 1%;
 }
 
 .nombre {
@@ -28,19 +35,35 @@ html {
   font-size: 1.2em;
   font-weight: normal;
   letter-spacing: 2px;
-  line-height: 1em;
+  line-height: 1.5em;
   font-stretch: expanded;
   padding: 0 5% 0 5%;
 }
 
-header {
-  background-image: url("landing.png");
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-  background-position: left top;
-  mix-blend-mode: multiply;
+.btn1 {
+  background: #1A2236;
+  color: #fff;
+  font-family: "popins", sans-serif;
+  font-size: 1.2em;
+  font-weight: normal;
+  letter-spacing: 2px;
+  line-height: 1em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  padding: 5% 20% 5% 20%;
+  width: 90%;
+  outline: none;
+  border: none;
 }
 
-nav{
-  margin-top: 0;
+.projects {
+  background-image: url("landing2.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center top;
+  mix-blend-mode: multiply;
+  height: 100vh;
+  margin-top: 10%;
 }
