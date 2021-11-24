@@ -82,3 +82,17 @@ header {
   height: 100vh;
   margin: 10% 0;
 }
+
+.project {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 5%;
+  font-family: 'playfair Display', sans-serif;
+  font-size: 3.2em;
+  font-weight: 300;
+  padding-top: 60%;
+  justify-content: start;
+
+}
