@@ -30,6 +30,7 @@ A PC with a Windows 10 or Linux Ubuntu operating system. It has to have GIT inst
 Go to the following site and clone the repository (https://github.com/sergiogval/sergiogval.github.io)
 ## Author
 
+### Sergio Valadez
 
 
 - GitHub: [@sergiogval](https://github.com/sergiogval/)
