@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+  background-image: url("landing.png");
+  background-repeat: no-repeat;
+  background-size: 35%;
+  background-position: left top;
+}
+
+header {
+  display: flex;
+  margin: 2%;
+  justify-content: end;
+}
+
+.fa-bars {
+  position: inherit;
+  display: flex;
+  font-size: 2em;
+  justify-content: end;
+  margin: 15% 15px;
+  padding-top: 3%;
+}
+
+.nombre {
+  font-family: 'Playfair Display', serif;
+  font-size: 4em;
+  font-weight: normal;
+  letter-spacing: 2px;
+  line-height: 1em;
+  font-stretch: expanded;
+  padding: 15% 5% 0 5%;
+  background: transparent;
+  background-color: transparent;
+  margin: 5%;
+}
+
+.intro {
+  font-family: 'poppins', sans-serif;
+  font-size: 1.2em;
+  font-weight: normal;
+  letter-spacing: 2px;
+  line-height: 1.5em;
+  font-stretch: expanded;
+  padding: 0 5% 0 5%;
+  margin: 5%;
+}
+
+.btn1 {
+  background: #1a2236;
+  color: #fff;
+  font-family: "poppins", sans-serif;
+  font-size: 1.2em;
+  font-weight: normal;
+  letter-spacing: 2px;
+  line-height: 1em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5%;
+  padding: 5% 20% 5% 20%;
+  width: 90%;
+  outline: none;
+  border: none;
+}
+
+.projects {
+  background-image: url("landing2.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center top;
+  mix-blend-mode: multiply;
+  height: 100vh;
+  margin: 10% 0;
+}
