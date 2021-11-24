@@ -1,8 +1,86 @@
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
 
-.bar1,
-.bar2,
-.bar3{
-  width: 20px;
-  height: 20px;
-  background-color: black;
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body{
+  overflow:hidden;
+}
+  .ham{
+      display:block;
+      cursor:pointer;
+      position: absolute; 
+      top:15px;
+      right:25px;
+      transition: 0.2s  0.1s; 
+
+  }
+
+  
+  nav{
+      flex-direction:column;
+      align-items: flex-start;
+      padding-top: 25px;
+      padding-bottom: 25px;
+  }
+
+  .logo{
+    padding-left:25px;
+    
+  }
+
+  .enlaces-menu{
+    
+      flex-direction:column;
+      justify-content: space-around;
+      align-items:center;
+      height: 92vh;         
+      margin:0;
+      padding:0; 
+      display:none;
+      opacity:0;
+      transition: opacity 5s ease-out;
+      width:100%;
+  
+     
+  }
+  .enlaces-menu li{
+    text-align:center;
+    width:100%;
+    padding:20px;    
+}
+
+}
+
+/* Animaciones */
+
+@keyframes muestraMenu {
+from {opacity: 0;}
+to {opacity: 1;}
+}
+
+.enlaces-menu.activado{
+  display:flex; 
+  animation: muestraMenu 350ms ease-in-out both;
+}
+
+.bar1.animado{
+transform: rotate(-45deg) translate(-10px, 8px);
+}
+
+.bar2.animado{
+opacity: 0;
+}
+.bar3.animado{
+transform: rotate(45deg) translate(-10px, -8px);
+}
+
+.ham.girar:hover{
+ transform:rotate(360deg);
 }
