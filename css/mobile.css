@@ -73,6 +73,28 @@ header {
   border: none;
 }
 
+.btn2 {
+  background-color: #1a2236;
+  color: #fff;
+  font-family: "poppins", sans-serif;
+  font-size: 1.2em;
+  font-weight: normal;
+  line-height: 1em;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  margin: 5%;
+  padding: 5% 2% 5% 4%;
+  outline: none;
+  border: solid 2px #fff;
+  box-sizing: content-box;
+  width: 45%;
+  background-image: url("/images/Union.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: right;
+}
+
 .projects {
   background-image: url("landing2.png");
   background-repeat: no-repeat;
@@ -86,7 +108,6 @@ header {
 .project {
   display: flex;
   flex-direction: row;
-  justify-content: center;
   align-items: center;
   margin: 5%;
   font-family: 'playfair Display', sans-serif;
@@ -94,5 +115,51 @@ header {
   font-weight: 300;
   padding-top: 60%;
   justify-content: start;
+}
 
+.projectimages {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.projectcard {
+  display: flex;
+  flex-direction: column;
+  background-color: #1a2236;
+  color: #fff;
+  padding: 2%;
+  margin-top: -1%;
+}
+
+.projecttitle {
+  font-family: 'poppins', sans-serif;
+  width: 100%;
+  font-style: normal;
+  font-size: 1.5em;
+  font-weight: 300;
+  line-height: 1.5em;
+  letter-spacing: 2px;
+  padding: 0 2% 0 2%;
+  margin: 1% 5%;
+  display: flex;
+  justify-content: start;
+}
+
+.language {
+  font-family: 'poppins', sans-serif;
+  font-style: normal;
+  font-size: 1em;
+  font-weight: 300;
+  line-height: 1em;
+  letter-spacing: 1px;
+  padding: 0 2% 0 2%;
+  margin: 1% 5%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  color: #1a2236;
+  background-color: #98dede;
+  width: 100vw;
+  justify-content: space-between;
 }
