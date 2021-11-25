@@ -56,8 +56,8 @@ header {
 }
 
 .btn1 {
-  background-color: #1a2236;
-  color: #e5e5e5;
+  background: #1a2236;
+  color: #fff;
   font-family: "poppins", sans-serif;
   font-size: 1.6em;
   font-weight: normal;
@@ -71,6 +71,7 @@ header {
   width: 90%;
   outline: none;
   border: none;
+  cursor: pointer;
 }
 
 .btn2 {
@@ -84,7 +85,7 @@ header {
   margin: 5%;
   padding: 3% 2% 3% 2%;
   outline: none;
-  border: solid 2px #fff;
+  border: solid 2px #e5e5e5;
   box-sizing: content-box;
   width: 50%;
   background-image: url('Union.png');
@@ -94,6 +95,7 @@ header {
   padding-right: 10px;
   justify-content: start;
   text-align: center;
+  cursor: pointer;
 }
 
 .projects {
@@ -177,10 +179,12 @@ header {
 .btn2:hover {
   background-color: #e5e5e5;
   color: #1a2236;
+  border: solid 2px #e5e5e5;
 }
 
 .btn1,
 .btn2:focus {
   background-color: #e5e5e5;
   color: #1a2236;
+  border: solid 2px #1a2236;
 }
