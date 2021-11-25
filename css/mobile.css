@@ -175,6 +175,10 @@ header {
   width: 100%;
 }
 
+.about {
+  display: flex;
+}
+
 .btn1,
 .btn2:hover {
   background-color: #e5e5e5;
