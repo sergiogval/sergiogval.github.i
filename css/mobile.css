@@ -47,7 +47,7 @@ header {
 .intro {
   font-family: 'poppins', sans-serif;
   font-size: 1.2em;
-  font-weight: normal;
+  font-weight: 300;
   letter-spacing: 2px;
   line-height: 1.5em;
   font-stretch: expanded;
@@ -56,10 +56,10 @@ header {
 }
 
 .btn1 {
-  background: #1a2236;
-  color: #fff;
+  background-color: #1a2236;
+  color: #e5e5e5;
   font-family: "poppins", sans-serif;
-  font-size: 1.2em;
+  font-size: 1.6em;
   font-weight: normal;
   letter-spacing: 2px;
   line-height: 1em;
@@ -77,22 +77,23 @@ header {
   background-color: #1a2236;
   color: #fff;
   font-family: "poppins", sans-serif;
-  font-size: 1.2em;
+  font-size: 1.6em;
   font-weight: normal;
-  line-height: 1em;
   display: flex;
-  justify-content: start;
   align-items: center;
   margin: 5%;
-  padding: 5% 2% 5% 4%;
+  padding: 3% 2% 3% 2%;
   outline: none;
   border: solid 2px #fff;
   box-sizing: content-box;
-  width: 45%;
-  background-image: url("/images/Union.png");
+  width: 50%;
+  background-image: url('Union.png');
   background-repeat: no-repeat;
-  background-size: contain;
-  background-position: right;
+  background-size: 10%;
+  background-position: 10em center;
+  padding-right: 10px;
+  justify-content: start;
+  text-align: center;
 }
 
 .projects {
@@ -134,9 +135,9 @@ header {
 
 .projecttitle {
   font-family: 'poppins', sans-serif;
-  width: 100%;
+  width: 80vw;
   font-style: normal;
-  font-size: 1.5em;
+  font-size: 1.7em;
   font-weight: 300;
   line-height: 1.5em;
   letter-spacing: 2px;
@@ -146,20 +147,40 @@ header {
   justify-content: start;
 }
 
-.language {
-  font-family: 'poppins', sans-serif;
-  font-style: normal;
-  font-size: 1em;
-  font-weight: 300;
-  line-height: 1em;
-  letter-spacing: 1px;
-  padding: 0 2% 0 2%;
-  margin: 1% 5%;
+.languagebadge {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
+  margin: 1%;
+  padding: 2px;
+}
+
+.language {
+  font-family: 'poppins', sans-serif;
+  font-style: normal;
+  font-size: 1.3em;
+  font-weight: 300;
+  line-height: 1em;
+  padding: 0 2% 0 2%;
+  margin: 1% 5%;
+  display: inline-flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: space-evenly;
   color: #1a2236;
   background-color: #98dede;
-  width: 100vw;
-  justify-content: space-between;
+  width: 100%;
+}
+
+.btn1,
+.btn2:hover {
+  background-color: #e5e5e5;
+  color: #1a2236;
+}
+
+.btn1,
+.btn2:focus {
+  background-color: #e5e5e5;
+  color: #1a2236;
 }
