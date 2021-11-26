@@ -70,8 +70,8 @@ header {
   padding: 5% 20% 5% 20%;
   width: 90%;
   outline: none;
-  border: none;
   cursor: pointer;
+  border: solid 2px #e5e5e5;
 }
 
 .btn2 {
@@ -91,7 +91,7 @@ header {
   background-image: url('Union.png');
   background-repeat: no-repeat;
   background-size: 10%;
-  background-position: 11em center;
+  background-position: 10em center;
   padding-right: 10px;
   justify-content: start;
   text-align: center;
@@ -118,7 +118,7 @@ header {
   background-image: url('download.png');
   background-repeat: no-repeat;
   background-size: 8%;
-  background-position: 13em center;
+  background-position: 15em center;
 }
 
 .projects {
@@ -129,7 +129,7 @@ header {
   background-position: center top;
   mix-blend-mode: multiply;
   height: 100%;
-  width: 100vw;
+  width: 100%;
   margin: 10% 0;
 }
 
@@ -235,42 +235,87 @@ header {
 .grid-container {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 1fr;
-  text-align: center;
+  grid-template-rows: auto;
+  justify-content: center;
   text-decoration: none;
   list-style: none;
 }
 
 .grid-item1 {
-  height: auto;
-  width: 90vw;
+  grid-column: 1;
+  grid-row: 1;
   color: #fff;
+  font-size: 2em;
+  line-height: 1.2em;
+  height: 45vh;
   background-color: #1c528a;
+  background-image: url('languages.png');
+  background-repeat: no-repeat;
+  background-size: auto !important;
+  background-position: right bottom;
+  padding: 10%;
+  margin: 2%;
+  display: flex;
+  justify-content: center;
 }
 
 .grid-item2 {
-  height: auto;
-  width: 90vw;
+  grid-column: 1;
+  grid-row: 2;
   color: #fff;
+  font-size: 2em;
+  line-height: 1.2em;
+  height: 45vh;
   background-color: #e2505c;
+  background-image: url('frameworks.png');
+  background-repeat: no-repeat;
+  background-size: auto !important;
+  background-position: right bottom;
+  padding: 5%;
+  margin: 2%;
+  display: flex;
+  justify-content: center;
 }
 
 .grid-item3 {
-  height: auto;
-  width: 90vw;
+  grid-column: 1;
+  grid-row: 3;
   color: #fff;
+  font-size: 2em;
+  line-height: 1.2em;
+  height: 45vh;
   background-color: #febf52;
+  background-image: url('skills.png');
+  background-repeat: no-repeat;
+  background-size: auto !important;
+  background-position: right bottom;
+  padding: 5%;
+  margin: 2%;
+  display: flex;
+  justify-content: center;
+}
+
+.about-title {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  line-height: 2em;
+  list-style-type: none !important;
+  text-decoration: none !important;
+  list-style-image: none !important;
 }
 
 .btn1:hover,
-.btn2:hover {
+.btn2:hover,
+.btn3:hover {
   background-color: #e5e5e5;
   color: #1a2236;
   border: solid 2px #e5e5e5;
 }
 
 .btn1:focus,
-.btn2:focus {
+.btn2:focus,
+.btn3:focus {
   background-color: #e5e5e5;
   color: #1a2236;
   border: solid 2px #1a2236;
