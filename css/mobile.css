@@ -300,7 +300,7 @@ header {
   display: flex;
   flex-direction: row;
   align-items: center;
-  font-size: 2em;;
+  font-size: 2em;
   line-height: 2em;
   list-style-type: none !important;
   text-decoration: none !important;
