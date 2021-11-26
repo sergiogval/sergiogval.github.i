@@ -236,10 +236,13 @@ header {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: auto;
-  justify-content: center;
+  justify-content: flex-start;
+  font-family: 'poppins', sans-serif;
+  font-style: normal;
+  font-weight: 600;
   text-align: left;
   text-decoration: none;
-  list-style: none;
+  list-style-position: inside;
 }
 
 .grid-item1 {
@@ -247,17 +250,19 @@ header {
   grid-row: 1;
   color: #fff;
   font-size: 2em;
-  line-height: 1.2em;
-  height: 40vh;
+  height: 50vh;
+  max-width: 100vw;
   background-color: #1c528a;
   background-image: url('languages.png');
   background-repeat: no-repeat;
-  background-size: auto !important;
+  background-size: auto;
   background-position: right bottom;
-  padding: 5%;
+  padding: 10%;
   margin: 2%;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: left;
+  list-style-type: disc;
 }
 
 .grid-item2 {
@@ -265,17 +270,19 @@ header {
   grid-row: 2;
   color: #fff;
   font-size: 2em;
-  line-height: 1.2em;
-  height: 40vh;
+  height: 50vh;
+  max-width: 100vw;
   background-color: #e2505c;
   background-image: url('frameworks.png');
   background-repeat: no-repeat;
-  background-size: auto !important;
+  background-size: auto;
   background-position: right bottom;
-  padding: 5%;
+  padding: 10%;
   margin: 2%;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: left;
+  list-style-type: disc;
 }
 
 .grid-item3 {
@@ -283,32 +290,38 @@ header {
   grid-row: 3;
   color: #fff;
   font-size: 2em;
-  line-height: 1.2em;
-  height: 40vh;
+  height: 50vh;
+  max-width: 100vw;
   background-color: #febf52;
   background-image: url('skills.png');
   background-repeat: no-repeat;
-  background-size: auto !important;
+  background-size: auto;
   background-position: right bottom;
-  padding: 5%;
+  padding: 10%;
   margin: 2%;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: flex-start;
+  list-style-type: disc;
 }
 
 .about-title {
   display: flex;
   flex-direction: row;
   align-items: center;
-  font-size: 2em;
+  justify-content: flex-start;
+  text-align: center;
+  font-family: 'poppins', sans-serif;
+  font-size: 1.6em;
   line-height: 2em;
   list-style-type: none !important;
   text-decoration: none !important;
   list-style-image: none !important;
+  padding-bottom: 8%;
 }
 
 ul {
-  text-align: center;
+  text-align: left;
 }
 
 .btn1:hover,
