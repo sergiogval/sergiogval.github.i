@@ -237,6 +237,7 @@ header {
   grid-template-columns: 1fr;
   grid-template-rows: auto;
   justify-content: center;
+  text-align: left;
   text-decoration: none;
   list-style: none;
 }
@@ -247,13 +248,13 @@ header {
   color: #fff;
   font-size: 2em;
   line-height: 1.2em;
-  height: 45vh;
+  height: 40vh;
   background-color: #1c528a;
   background-image: url('languages.png');
   background-repeat: no-repeat;
   background-size: auto !important;
   background-position: right bottom;
-  padding: 10%;
+  padding: 5%;
   margin: 2%;
   display: flex;
   justify-content: center;
@@ -265,7 +266,7 @@ header {
   color: #fff;
   font-size: 2em;
   line-height: 1.2em;
-  height: 45vh;
+  height: 40vh;
   background-color: #e2505c;
   background-image: url('frameworks.png');
   background-repeat: no-repeat;
@@ -283,7 +284,7 @@ header {
   color: #fff;
   font-size: 2em;
   line-height: 1.2em;
-  height: 45vh;
+  height: 40vh;
   background-color: #febf52;
   background-image: url('skills.png');
   background-repeat: no-repeat;
@@ -299,10 +300,15 @@ header {
   display: flex;
   flex-direction: row;
   align-items: center;
+  font-size: 2em;;
   line-height: 2em;
   list-style-type: none !important;
   text-decoration: none !important;
   list-style-image: none !important;
+}
+
+ul {
+  text-align: center;
 }
 
 .btn1:hover,
