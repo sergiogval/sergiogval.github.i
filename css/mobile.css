@@ -209,6 +209,7 @@ header {
   margin: 1%;
 }
 
+.contactheader,
 .aboutheader {
   display: flex;
   flex-direction: row;
@@ -217,7 +218,7 @@ header {
   font-family: 'playfair Display', sans-serif;
   font-size: 4em;
   font-weight: 300;
-  padding: 5% 5% 0 5%;
+  padding: 16% 5% 0 5%;
   justify-content: start;
 }
 
@@ -329,6 +330,31 @@ header {
   padding: 0;
 }
 
+fieldset {
+  border: none;
+  text-align: center;
+  background-color: #e5e5e5;
+  background-image: url("landing.png");
+  background-repeat: no-repeat;
+  background-position: left top;
+  margin-top: 2em;
+}
+
+.name {
+  width: 90%;
+  height: 8vh;
+  background-color: white;
+  margin: 0.8em 1em  0.8em 1em;
+  border-radius: 4px;
+}
+
+.message {
+  width: 90%;
+  height: 20vh;
+  background-color: white;
+  margin: 0.2em 1em  0.8em 1em;
+  border-radius: 4px;
+}
 .btn1:hover,
 .btn2:hover,
 .btn3:hover {
