@@ -263,6 +263,7 @@ header {
   flex-direction: column;
   justify-content: left;
   list-style-type: disc;
+  list-style-position: inside;
 }
 
 .grid-item2 {
@@ -283,6 +284,7 @@ header {
   flex-direction: column;
   justify-content: left;
   list-style-type: disc;
+  list-style-position: inside;
 }
 
 .grid-item3 {
@@ -303,6 +305,7 @@ header {
   flex-direction: column;
   justify-content: flex-start;
   list-style-type: disc;
+  list-style-position: inside;
 }
 
 .about-title {
