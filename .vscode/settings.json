@@ -1,4 +1,4 @@
 {
   "deepscan.enable": true,
-  "localhost.port": 1987
+  "liveServer.settings.port": 1987,
 }
