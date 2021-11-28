@@ -46,9 +46,10 @@ header {
 
 .intro {
   font-family: 'poppins', sans-serif;
+  color: black;
   font-size: 1.2em;
-  font-weight: 300;
-  letter-spacing: 2px;
+  font-weight: 400;
+  letter-spacing: 1px;
   line-height: 1.5em;
   font-stretch: expanded;
   padding: 0 5% 0 5%;
@@ -113,12 +114,12 @@ header {
   padding: 5% 20% 5% 10%;
   width: 90%;
   outline: none;
-  border: none;
   cursor: pointer;
   background-image: url('download.png');
   background-repeat: no-repeat;
   background-size: 8%;
   background-position: 15em center;
+  border: solid 2px #e5e5e5;
 }
 
 .projects {
@@ -360,11 +361,47 @@ fieldset {
   outline: none;
 }
 
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-family: 'poppins', sans-serif;
+  font-size: 1.2em;
+  line-height: 1.5em;
+  list-style-type: none !important;
+  text-decoration: none !important;
+  list-style-image: none !important;
+  padding-bottom: 8%;
+  background-color: #1a2236;
+  box-sizing: border-box;
+}
+
+.resume {
+  display: flex;
+  flex-direction: row;
+  color: #98dede;
+  font-size: 1.5em;
+  padding: 5%;
+  margin: 3% 2% 5% 1%;
+  justify-content: left;
+  background-image: url('download1.png');
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: 10em center;
+  width: 95vw;
+}
+
+.social {
+  display: flex;
+  flex-direction: row;
+  width: 95vw;
+  justify-content: space-around;
+}
+
 .name:focus,
 .message:focus {
   border: solid 2px #1a2236;
 }
-
 
 .btn1:hover,
 .btn2:hover,
