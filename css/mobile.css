@@ -8,18 +8,19 @@
 body {
   font-size: 62.5%;
   box-sizing: border-box;
-  background-image: url("landing.png");
-  background-repeat: no-repeat;
-  background-size: 35%;
-  background-position: left top;
   margin: 0;
   padding: 0;
 }
 
 header {
   display: flex;
-  margin: 2%;
+  margin: 0;
+  height: 12vh;
   justify-content: end;
+  background-image: url("landing.png");
+  background-repeat: no-repeat;
+  background-size: 35%;
+  background-position: left top;
 }
 
 .nombre {
@@ -419,8 +420,11 @@ a:active {
 
 @media (min-width: 768px) {
   header {
+    background-image: none;
     margin: 0;
     padding: 0;
+    width: 100vw;
+    height: 10vh;
   }
 
   nav {
@@ -429,8 +433,6 @@ a:active {
     flex-direction: column;
     align-items: center;
     background-color: #fff;
-    width: 100vw;
-    height: 10vh;
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -443,9 +445,9 @@ a:active {
   .menu {
     display: flex;
     flex-direction: row;
-    width: 35vw;
     height: 10vh;
-    justify-content: space-evenly;
+    width: 100vw;
+    justify-content: center;
     align-items: center;
     margin: 0;
   }
@@ -470,7 +472,7 @@ a:active {
     font-family: 'poppins', sans-serif;
   }
 
-  .menu-items:hover {
+  .menu-items:hover > a {
     border-bottom: solid 2px #1a2236;
   }
 }
