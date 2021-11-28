@@ -333,7 +333,7 @@ header {
 fieldset {
   border: none;
   text-align: center;
-  background-color: #e5e5e5;
+  background-color: #f9f9fa;
   background-image: url("landing.png");
   background-repeat: no-repeat;
   background-position: left top;
@@ -345,7 +345,9 @@ fieldset {
   height: 8vh;
   background-color: white;
   margin: 0.8em 1em  0.8em 1em;
+  border: solid 2px #dfdfe0;
   border-radius: 4px;
+  outline: none;
 }
 
 .message {
@@ -353,8 +355,16 @@ fieldset {
   height: 20vh;
   background-color: white;
   margin: 0.2em 1em  0.8em 1em;
+  border: solid 2px #dfdfe0;
   border-radius: 4px;
+  outline: none;
 }
+
+.name:focus,
+.message:focus {
+  border: solid 2px #1a2236;
+}
+
 
 .btn1:hover,
 .btn2:hover,
