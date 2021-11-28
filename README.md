@@ -16,7 +16,7 @@ Additional description about the project and its features.
 
 ## Live Demo
 
-Will be delivered in the following steps of the project.
+Click here to see the live demo.
 
 
 ## Getting Started
