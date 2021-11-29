@@ -543,6 +543,8 @@ a:active {
     display: inline-flex;
     flex-direction: row;
     padding: 0;
+    font-size: 0.5em;
+    width: 100vw;
   }
 
   .resume {
@@ -553,10 +555,14 @@ a:active {
   }
 
   .social {
-    width: 50vw;
+    width: 30%;
     height: auto;
     padding: 1%;
     margin: 3%;
+  }
+
+  .socialicon > a > img {
+    width: 50%;
   }
 
   .menu-items:hover > a {
