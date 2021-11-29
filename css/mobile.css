@@ -519,13 +519,12 @@ a:active {
     grid-row: 3;
     margin-block: 1%;
     margin-left: 3.5em;
-    padding:1%;
+    padding: 1%;
     width: 40%;
     height: 25%;
     box-sizing: content-box;
     display: flex;
     flex-wrap: wrap;
-
   }
 
   .projects {
