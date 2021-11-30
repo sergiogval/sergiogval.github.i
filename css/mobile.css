@@ -389,7 +389,7 @@ footer {
   background-size: auto;
   background-position: 10em center;
   width: 95vw;
-  list-style: none;
+  text-decoration: none;
 }
 
 .social {
