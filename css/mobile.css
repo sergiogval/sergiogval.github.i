@@ -36,7 +36,7 @@ header {
   font-size: 5em;
   font-weight: normal;
   letter-spacing: 2px;
-  line-height: 1em;
+  line-height: 1.2em;
   font-stretch: expanded;
   padding: 15% 5% 0 5%;
   background: transparent;
@@ -333,7 +333,8 @@ header {
 
 fieldset {
   border: none;
-  text-align: center;
+  text-align: left;
+  font-size: 1.2em;
   background-color: #f9f9fa;
   background-image: url("landing.png");
   background-repeat: no-repeat;
@@ -342,23 +343,26 @@ fieldset {
 }
 
 .name {
-  width: 90%;
+  width: 93%;
   height: 8vh;
   background-color: white;
   margin: 0.8em 1em  0.8em 1em;
   border: solid 2px #dfdfe0;
   border-radius: 4px;
   outline: none;
+  padding: 0.5em;
 }
 
 .message {
-  width: 90%;
+  font-family: 'poppins', sans-serif;
+  width: 93%;
   height: 20vh;
   background-color: white;
   margin: 0.2em 1em  0.8em 1em;
   border: solid 2px #dfdfe0;
   border-radius: 4px;
   outline: none;
+  padding: 0.5em;
 }
 
 footer {
@@ -390,6 +394,7 @@ footer {
   background-position: 10em center;
   width: 95vw;
   text-decoration: none;
+  cursor: pointer;
 }
 
 .social {
