@@ -28,9 +28,9 @@ header {
   flex-direction: column;
 }
 
-.nombre {
+h1.nombre {
   font-family: 'Playfair Display', serif;
-  font-size: 5em;
+  font-size: 7em;
   font-weight: normal;
   letter-spacing: 2px;
   line-height: 1em;
@@ -45,8 +45,7 @@ header {
   font-family: 'poppins', sans-serif;
   color: black;
   font-size: 1.2em;
-  font-weight: 400;
-  letter-spacing: 1px;
+  font-weight: 300;
   line-height: 1.5em;
   font-stretch: expanded;
   padding: 0 5% 0 5%;
@@ -498,12 +497,12 @@ a:active {
     grid-column: 1;
     grid-row: 1;
     align-items: center;
-    font-weight: bold;
     height: min-content;
     line-height: normal;
     box-sizing: border-box;
     padding: 3% 1% 0 10%;
     margin-block: 2%;
+    font-weight: 300;
   }
 
   .intro {
@@ -512,19 +511,22 @@ a:active {
     line-height: normal;
     padding: 3% 1% 0 10%;
     margin-block: 2%;
+    margin: 5%;
+    max-width: max-content;
   }
 
   .btn1 {
     grid-column: 1;
     grid-row: 3;
     margin-block: 1%;
-    margin-left: 3.5em;
-    padding: 1%;
     width: 40%;
     height: 25%;
     box-sizing: content-box;
     display: flex;
     flex-wrap: wrap;
+    margin: 5%;
+    padding: 5% 20% 5% 20%;
+  
   }
 
   .projects {
@@ -551,6 +553,9 @@ a:active {
     height: auto;
     padding: 1%;
     margin: 1%;
+    letter-spacing: 2px;
+    align-items: center;
+    background-size: 2%;
   }
 
   .social {
