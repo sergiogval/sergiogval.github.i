@@ -16,22 +16,23 @@ Additional description about the project and its features.
 
 ## Live Demo
 
-Will be delivered in the following steps of the project.
-
+[Live Demo Link](https://sergiogval.github.io/)
 
 ## Getting Started
 
 To get a local copy up and running follow these simple example steps.
 
 ### Prerequisites
+
 A PC with a Windows 10 or Linux Ubuntu operating system. It has to have GIT installed.
 
 ### Setup
+
 Go to the following site and clone the repository (https://github.com/sergiogval/sergiogval.github.io)
+
 ## Author
 
 ### Sergio Valadez
-
 
 - GitHub: [@sergiogval](https://github.com/sergiogval/)
 - Tweeter [@srgvldz](https://twitter.com/srgvldz)
