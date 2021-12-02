@@ -539,6 +539,7 @@ a:active {
     font-size: 1em;
     flex-wrap: nowrap;
   }
+
   .btn2, {
     max-width: min-content;
     height: 3.125%;
@@ -693,6 +694,7 @@ a:active {
       auto,
       auto;
     background-color: #f5f5f5;
+
     /* bottom: 10vh; */
   }
 
@@ -701,22 +703,6 @@ a:active {
     font-size: 8em;
     width: 40%;
     text-align: center;
-  }
-
-  .intro {
-    font-size: 1em;
-    padding: 0;
-    margin: 0;
-    width: 40%;
-  }
-  
-  label {
-    display: flex;
-    flex-direction: column;
-    font-size: 1.2em;
-    align-items: start;
-    color: #b3b0b0;
-    margin: 0 2%;
   }
 
   .name {
@@ -729,7 +715,7 @@ a:active {
     margin: 0 1%;
     padding: 6%;
     box-sizing: border-box;
-  } 
+  }
 
   .form-group {
     display: inline-flex;
@@ -741,7 +727,9 @@ a:active {
     margin: 1%;
     padding: 1%;
     box-sizing: border-box;
-    /* column-gap: 2%; */
+
+    column-gap: 2%;
+
     /* row-gap: 2%; */
   }
 
