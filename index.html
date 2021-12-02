@@ -133,7 +133,7 @@
       Ut enim ad minim veniam,
       quis nostrud exercitation ullamco laboris nisi ut aliquip ea eiusmod
     </p>
-    <input type=button class="btn3" value="Get my CV" />
+    <button type=button class="btn3">Get my CV</button>
     <ul class="grid-container">
       <li class="aboutcard">
         <ul class="grid-item1">
@@ -176,17 +176,19 @@
     <fieldset class="contact">
       <h2 class="contactheader">Get Started</h2>
       <p class="intro">Lorem ipsum dolor sit amet,
-        consectetur adipiscing elit,
-        sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
-      <label for="name"></label>
-      <input type="text" class="name" id="name" name="name" placeholder="Your Name" required />
-      <br>
-      <label for="name"></label>
-      <input type="text" class="name" id="email" name="email" value="Your Email" required />
-      <br>
-      <label for="message"></label>
-      <textarea name="message" class="message" id="message" placeholder="Enter your message here..."></textarea>
-      <input type="submit" class="btn1  " value="Start collaboration" />
+        consectetur adipiscing elit,Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      <div class="form-group">
+        <label for="name">  Your mail
+          <input type="text" class="name" id="name" name="name"  required maxlength="30"/>
+        </label>
+        <label for="name">  Your email
+          <input type="email" class="name" id="email" name="email"  required />
+        </label>
+      </div>
+      <label class="form-group" for="message">Message</label>
+      <textarea name="message" class="message" id="message" placeholder="  Enter your message here..." required maxlength="500"></textarea>
+      <botton type="submmit" class="btn1">Start collaboration</botton>
     </fieldset>
   </form>
   <footer>
