@@ -3,6 +3,9 @@
 
 * {
   box-sizing: border-box;
+  scroll-behavior: smooth;
+
+  /* border: solid 2px red; */
 }
 
 body {
@@ -17,10 +20,6 @@ header {
   margin: 0;
   height: 12vh;
   justify-content: end;
-  background-image: url("landing.png");
-  background-repeat: no-repeat;
-  background-size: 35%;
-  background-position: left top;
 }
 
 .home {
@@ -50,6 +49,12 @@ h1.nombre {
   font-stretch: expanded;
   padding: 0 5% 0 5%;
   margin: 5%;
+}
+
+.homeimg,
+.dotshome,
+.dotsproject {
+  display: none;
 }
 
 .btn1 {
@@ -142,7 +147,7 @@ h1.nombre {
   justify-content: start;
 }
 
-.projectimages {
+.projectimages1 {
   margin: 0;
   padding: 0;
   width: 100%;
@@ -424,6 +429,9 @@ a:active {
 
 @media (min-width: 768px) {
   body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
     font-size: 80%;
   }
 
@@ -458,6 +466,7 @@ a:active {
     justify-content: center;
     align-items: center;
     margin: 0;
+    padding: 0;
   }
 
   .menu-items {
@@ -473,23 +482,28 @@ a:active {
     line-height: 1.5em;
   }
 
-  .home {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 2fr;
-    row-gap: 0.1%;
-    column-gap: 0.1%;
-    background-image: url("landingdesk.png");
-    background-repeat: no-repeat;
-    background-size: 50%;
-    background-position: 100% 0%;
-    width: 100vw;
-    height: 110vh;
+  .container {
+    position: absolute;
+    display: flex;
+    height: 100vh;
+    width: 49vw;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    text-justify: initial;
-    justify-content: start;
+    background-image: url('dots.png');
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: right bottom;
+    flex-shrink: 1;
+  }
+
+  .home {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    box-sizing: border-box;
+    margin-bottom: 0;
   }
 
   .nombre {
@@ -497,8 +511,8 @@ a:active {
     grid-column: 1;
     grid-row: 1;
     align-items: center;
-    height: min-content;
-    line-height: normal;
+    height: auto;
+    line-height: 1.2em;
     box-sizing: border-box;
     padding: 3% 1% 0 10%;
     margin-block: 2%;
@@ -506,31 +520,117 @@ a:active {
   }
 
   .intro {
-    grid-column: 1;
-    grid-row: 2;
     line-height: normal;
-    padding: 3% 1% 0 10%;
+    padding: 1%;
     margin-block: 2%;
-    margin: 5%;
     max-width: max-content;
+    height: max-content;
+    font-size: 1.5em;
   }
 
   .btn1 {
-    grid-column: 1;
-    grid-row: 3;
-    margin-block: 1%;
-    width: 40%;
-    height: 25%;
+    max-width: max-content;
+    height: 3.125%;
     box-sizing: content-box;
     display: flex;
-    flex-wrap: wrap;
-    margin: 5%;
-    padding: 5% 20% 5% 20%;
-  
+    flex-wrap: nowrap;
+    margin-left: 6%;
+    padding: 2% 5%;
+  }
+
+  .desktophome {
+    position: absolute;
+    display: flex;
+    justify-content: left;
+    align-items: start;
+    flex-direction: column;
+    width: 80%;
+    padding: 5%;
+    margin: 5% 5% 20% 20%;
+    box-sizing: border-box;
+  }
+
+  .homeimg {
+    display: flex;
+    flex-shrink: 0;
+    position: absolute;
+    height: 100vh;
+    width: 50vw;
+
+    /* margin-top: 3%; */
+    padding: 0;
+    left: 50%;
+    justify-content: center;
+  }
+
+  .dotshome {
+    display: flex;
+    top: 91.5%;
+    position: absolute;
+    left: 39.5%;
+    box-sizing: border-box;
+    flex-shrink: 0;
+    min-height: 20%;
   }
 
   .projects {
     background-image: none;
+    margin-block: 5%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 100%;
+  }
+
+  .project-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-image: url('dots.png');
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: right top;
+  }
+
+  .project {
+    grid-column: 1;
+    grid-row: 1;
+    transform: rotate(-90deg);
+    font-size: 9em;
+    width: 100%;
+    height: 47%;
+    margin-bottom: 20%;
+    padding: 8% 0 20% 0;
+    box-sizing: border-box;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+  }
+
+  .projectimages1 {
+    grid-column: 2/4;
+    grid-row: 1;
+    align-items: start;
+    justify-content: start;
+    min-height: 100%;
+    min-width: 200%;
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+  }
+
+  .projectcard,
+  .projectimages2,
+  .projectimages3,
+  .projectimages4,
+  .projectimages5,
+  .projectimages6 {
+    display: none;
   }
 
   .grid-container {

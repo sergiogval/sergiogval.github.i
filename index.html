@@ -9,6 +9,7 @@
   <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
   <link rel="stylesheet" href="css/mobile.css">
 </head>
+
 <body>
   <header>
     <nav>
@@ -18,25 +19,34 @@
         <li class="menu-items"><a href="#about">About</a></li>
         <li class="menu-items"><a href="#form">Contact</a></li>
       </ul>
-      <button class="ham" type="button">   
+      <button class="ham" type="button">
         <span class="br-1"></span>
         <span class="br-2"></span>
         <span class="br-3"></span>
-     </button>                       
+      </button>
     </nav>
   </header>
   <section class="home" id="home">
-    <h1 class="nombre"> Sergio<br> Valadez </h1>
-    <p class="intro">
-      Hello! I am a software developer! I can help you build a product, feature or website. Taka a look of my works.
-      If you like what you see and have a project you need coded, don’t hesitate and contact me.
-    </p>
-    <button class="btn1" type="button">Start collaboration</button>
+    <div class="container">
+      <div class="desktophome">
+        <h1 class="nombre"> Sergio<br> Valadez </h1>
+        <p class="intro">
+          Hello! I am a software developer! I can help you build a product, feature or website. Taka a look of my works.
+          If you like what you see and have a project you need coded, don’t hesitate and contact me.
+        </p>
+        <button class="btn1" type="button">Start collaboration</button>
+      </div>
+    </div>
+    <div>
+      <img src="css/landingdesk.png" width="100" alt="landingdesk" class="homeimg">
+    </div>
   </section>
   <section class="projects" id="projects">
-    <h2 class="project">Projects</h2>
+    <div class="project-header">
+      <h2 class="project">Projects</h2>
+    </div>  
     <div>
-      <img class="projectimages" src="images/project1.png" alt="project image" />
+      <img class="projectimages1" src="images/project1.png"  alt="project image" />
       <div class="projectcard">
         <h3 class="projecttitle">Projects name goes here</h3>
         <ul class="languagebadge">
@@ -49,7 +59,7 @@
       </div>
     </div>
     <div>
-      <img class="projectimages" src="images/project2.png" alt="project image" />
+      <img class="projectimages2" src="images/project2.png" alt="project image" />
       <div class="projectcard">
         <h3 class="projecttitle">Projects name goes here</h3>
         <ul class="languagebadge">
@@ -62,7 +72,7 @@
       </div>
     </div>
     <div>
-      <img class="projectimages" src="images/project3.png" alt="project image" />
+      <img class="projectimages3" src="images/project3.png" alt="project image" />
       <div class="projectcard">
         <h3 class="projecttitle">Projects name goes here</h3>
         <ul class="languagebadge">
@@ -75,7 +85,7 @@
       </div>
     </div>
     <div>
-      <img class="projectimages" src="images/project4.png" alt="project image" />
+      <img class="projectimages4" src="images/project4.png" alt="project image" />
       <div class="projectcard">
         <h3 class="projecttitle">Projects name goes here</h3>
         <ul class="languagebadge">
@@ -88,7 +98,7 @@
       </div>
     </div>
     <div>
-      <img class="projectimages" src="images/project5.png" alt="project image" />
+      <img class="projectimages5" src="images/project5.png" alt="project image" />
       <div class="projectcard">
         <h3 class="projecttitle">Projects name goes here</h3>
         <ul class="languagebadge">
@@ -101,7 +111,7 @@
       </div>
     </div>
     <div>
-      <img class="projectimages" src="images/project6.png" alt="project image" />
+      <img class="projectimages5" src="images/project6.png" alt="project image" />
       <div class="projectcard">
         <h3 class="projecttitle">Projects name goes here</h3>
         <ul class="languagebadge">
@@ -180,7 +190,7 @@
     </fieldset>
   </form>
   <footer>
-    <div  class="resume">
+    <div class="resume">
       <p>Get my CV</p>
     </div>
     <ul class="social">
@@ -205,4 +215,5 @@
     </ul>
   </footer>
 </body>
+
 </html>
