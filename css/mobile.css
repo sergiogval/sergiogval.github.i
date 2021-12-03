@@ -51,6 +51,7 @@ h1.nombre {
   margin: 5%;
 }
 
+.btn4,
 .homeimg,
 .dotshome,
 .dotsproject {
@@ -121,6 +122,25 @@ h1.nombre {
   background-size: 8%;
   background-position: 15em center;
   border: solid 2px #e5e5e5;
+}
+
+.btn4 {
+  background-color: #1a2236;
+  color: #fff;
+  font-family: "poppins", sans-serif;
+  font-size: 1.6em;
+  font-weight: normal;
+  letter-spacing: 2px;
+  line-height: 1em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 5% 0 5%;
+  padding: 2% 5%;
+  width: 90%;
+  outline: none;
+  cursor: pointer;
+  text-align: center;
 }
 
 .projects {
@@ -409,7 +429,8 @@ footer {
 
 .btn1:hover,
 .btn2:hover,
-.btn3:hover {
+.btn3:hover,
+.btn4:hover {
   background-color: #e5e5e5;
   color: #1a2236;
   border: solid 2px #e5e5e5;
@@ -417,7 +438,8 @@ footer {
 
 .btn1:focus,
 .btn2:focus,
-.btn3:focus {
+.btn3:focus,
+.btn4:focus {
   background-color: #e5e5e5;
   color: #1a2236;
   border: solid 2px #1a2236;
@@ -515,11 +537,13 @@ a:active {
     grid-row: 1;
     align-items: center;
     height: auto;
-    line-height: 1.2em;
+    line-height: 1.5em;
     box-sizing: border-box;
     padding: 3% 1% 0 10%;
     margin-block: 2%;
     font-weight: 300;
+    font-size: 9em !important;
+    max-width: max-content;
   }
 
   .intro {
@@ -529,23 +553,44 @@ a:active {
     max-width: max-content;
     height: max-content;
     font-size: 1.5em;
-    font-weight: 600;
+    font-weight: 400;
+    text-align: justify;
+  }
+
+  .introabout {
+    line-height: 1.2em;
+    padding: 1%;
+    margin: 0;
+    margin-block: 2%;
+    max-width: 40%;
+    height: max-content;
+    font-size: 1.5em;
+    font-weight: 400;
     text-align: justify;
   }
 
   .btn1 {
-    width: 30%;
+    width: 45%;
     padding: 2% 5%;
     font-size: 1em;
     flex-wrap: nowrap;
   }
 
-  .btn2, {
+  .btn2 {
     max-width: min-content;
     height: 3.125%;
     box-sizing: border-box;
     display: flex;
     flex-wrap: nowrap;
+  }
+
+  .btn4 {
+    width: 20%;
+    padding: 2% 2%;
+    margin: 0;
+    font-size: 1em;
+    flex-wrap: nowrap;
+    text-align: center;
   }
 
   .desktophome {
@@ -674,7 +719,7 @@ a:active {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: center;
     height: 100vh;
     width: 100vw;
     margin: 0;
@@ -700,7 +745,8 @@ a:active {
 
   .contactheader {
     padding: 0;
-    font-size: 8em;
+    margin: 0;
+    font-size: 7.5em;
     width: 40%;
     text-align: center;
   }
@@ -711,7 +757,7 @@ a:active {
     align-items: center;
     justify-content: center;
     height: 100%;
-    width: 18vw;
+    width: 19vw;
     margin: 0 1%;
     padding: 6%;
     box-sizing: border-box;
@@ -722,24 +768,32 @@ a:active {
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    height: 100%;
     width: 100vw;
     margin: 1%;
     padding: 1%;
     box-sizing: border-box;
-
     column-gap: 2%;
+    text-align: left;/* row-gap: 2%; */
+  }
 
-    /* row-gap: 2%; */
+  .message-label {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
+    width: 40%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
   }
 
   .message {
     display: flex;
     justify-content: center;
-    height: 30vh;
     width: 40%;
-    margin: 0 1%;
-    padding: 0 0 6% 0;
+    height: 18%;
+    margin-bottom: 2%;
+    padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
   }
@@ -749,9 +803,9 @@ a:active {
     flex-direction: row;
     align-items: end;
     padding-bottom: 0;
-    margin: 0;
     font-size: 0.5em;
     width: 100%;
+    height: 15vh;
     position: relative;
   }
 
@@ -777,7 +831,8 @@ a:active {
     width: 50%;
   }
 
-  .menu-items:hover > a {
+  .menu-items:hover > a,
+  .menu-items:focus > a {
     border-bottom: solid 2px #1a2236;
   }
 }
