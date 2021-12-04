@@ -89,14 +89,13 @@ h1.nombre {
   background-color: #1a2236;
   color: #fff;
   font-family: "poppins", sans-serif;
-  font-size: 1.6em;
+  font-size: 1em;
   font-weight: normal;
   display: flex;
   align-items: center;
   margin: 3%;
   padding: 3% 2%;
   outline: none;
-  border: solid 2px #e5e5e5;
   box-sizing: content-box;
   width: 50%;
   background-image: url("Union.png");
@@ -453,6 +452,7 @@ fieldset {
   margin: 5%;
   align-items: center;
   justify-content: center;
+  color: #1a2236;
 }
 
 .name {
@@ -545,7 +545,7 @@ a:active {
   color: #1a2236;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   * {
     background-repeat: no-repeat;
     background-size: cover;
@@ -676,6 +676,7 @@ a:active {
     font-size: 1.5em;
     font-weight: 300;
     text-align: justify;
+    color: #1a2236;
   }
 
   .introcontact {
@@ -688,7 +689,7 @@ a:active {
   }
 
   .btn1 {
-    width: 20%;
+    width: 25%;
     padding: 2% 5%;
     margin-bottom: 20vh;
     font-size: 1em;
@@ -697,13 +698,15 @@ a:active {
   }
 
   .btn3 {
-    max-width: min-content;
-    height: 3.125%;
     box-sizing: border-box;
     display: flex;
     flex-wrap: nowrap;
     justify-content: center;
-    min-width: 70%;
+    width: 60%;
+    text-align: left;
+    padding: 0;
+    height: 8vh;
+    background-position-x: 12em;
   }
 
   .btn4 {
@@ -738,6 +741,8 @@ a:active {
   }
 
   .aboutheader {
+    color: #1a2236;
+    font-weight: 500;
     display: flex;
     flex-direction: row;
     width: 80%;
@@ -892,6 +897,8 @@ a:active {
   }
 
   .contactheader {
+    color: #1a2236;
+    font-weight: 500;
     padding: 0;
     margin: 0;
     font-size: 5.5em;
@@ -899,6 +906,7 @@ a:active {
     text-align: center;
     display: flex;
     flex-wrap: nowrap;
+    justify-content: center;
   }
 
   .name {
@@ -945,7 +953,7 @@ a:active {
     width: 40%;
     min-height: 18%;
     margin-bottom: 2%;
-    padding: 0;
+    padding: 2%;
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
   }
@@ -963,25 +971,23 @@ a:active {
 
   .resume {
     width: 50vw;
-    height: auto;
     padding: 1%;
-    margin: 2.2%;
-    letter-spacing: 2px;
+    margin: 2em;
     align-items: center;
     justify-content: start;
-    background-size: 2%;
+    background-size: 4%;
+    font-size: 2em;
   }
 
   .social {
-    width: 30%;
-    height: auto;
+    width: 30vw;
     padding: 0;
-    margin: 3%;
+    margin: 3em;
   }
 
-  .socialicon > a > img {
-    width: 1vw;
-    height: 1vw;
+  .socialicon {
+    margin: 0;
+    padding: 0;
   }
 
   .menu-items:hover > a,
