@@ -174,23 +174,10 @@ h1.nombre {
   justify-content: start;
 }
 
-.projectimages1 {
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  height: auto;
-}
-
 .projectcard1 {
-  display: flex;
-  flex-direction: column;
-  justify-content: end;
-  background-color: #1a2236;
-  color: #fff;
-  box-sizing: border-box;
   background-image: url(/images/project1.png);
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: cover;
   background-position: center;
 }
 
@@ -1204,5 +1191,14 @@ a:active {
     background-size: 50%;
     grid-column: 5;
     grid-row: 10;
+  }
+
+  .i1,
+  .i2,
+  .i3,
+  .i4,
+  .i5,
+  .i6 {
+    display: none;
   }
 }
