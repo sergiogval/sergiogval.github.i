@@ -53,6 +53,10 @@ h1.nombre {
   margin: 5%;
 }
 
+.ham {
+  display: block;
+}
+
 /* label, */
 .menu-items,
 .btn4,
@@ -155,10 +159,10 @@ h1.nombre {
   height: 100%;
   width: 100%;
   margin: 10% 0;
-  padding-top: 60%;
+  padding-top: 6%;
 }
 
-.project {
+.projects-title {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -178,17 +182,12 @@ h1.nombre {
 }
 
 .projectcard1 {
-  position: absolute;
   display: flex;
   flex-direction: column;
   justify-content: end;
   background-color: #1a2236;
   color: #fff;
-  height: 32%;
-  width: 69.5%;
-  top: 158%;
-  left: 30.5%;
-  box-sizing: content-box;
+  box-sizing: border-box;
   background-image: url(/images/project1.png);
   background-repeat: no-repeat;
   background-size: 100%;
@@ -201,12 +200,7 @@ h1.nombre {
   flex-direction: column;
   justify-content: end;
   background-color: #1a2236;
-  color: #fff;
-  height: 32%;
-  width: 69.5%;
-  top: 158%;
-  left: 30.5%;
-  box-sizing: content-box;
+  box-sizing: border-box;
   background-image: url(/images/project2.png);
   background-repeat: no-repeat;
   background-size: 100%;
@@ -219,12 +213,7 @@ h1.nombre {
   flex-direction: column;
   justify-content: end;
   background-color: #1a2236;
-  color: #fff;
-  height: 32%;
-  width: 69.5%;
-  top: 158%;
-  left: 30.5%;
-  box-sizing: content-box;
+  box-sizing: border-box;
   background-image: url(/images/project3.png);
   background-repeat: no-repeat;
   background-size: 100%;
@@ -237,12 +226,7 @@ h1.nombre {
   flex-direction: column;
   justify-content: end;
   background-color: #1a2236;
-  color: #fff;
-  height: 32%;
-  width: 69.5%;
-  top: 158%;
-  left: 30.5%;
-  box-sizing: content-box;
+  box-sizing: border-box;
   background-image: url(/images/project4.png);
   background-repeat: no-repeat;
   background-size: 100%;
@@ -255,12 +239,7 @@ h1.nombre {
   flex-direction: column;
   justify-content: end;
   background-color: #1a2236;
-  color: #fff;
-  height: 32%;
-  width: 69.5%;
-  top: 158%;
-  left: 30.5%;
-  box-sizing: content-box;
+  box-sizing: border-box;
   background-image: url(/images/project5.png);
   background-repeat: no-repeat;
   background-size: 100%;
@@ -268,17 +247,13 @@ h1.nombre {
 }
 
 .projectcard6 {
-  position: absolute;
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: end;
   background-color: #1a2236;
   color: #fff;
-  height: 32%;
-  width: 69.5%;
-  top: 158%;
-  left: 30.5%;
-  box-sizing: content-box;
+  box-sizing: border-box;
   background-image: url(/images/project6.png);
   background-repeat: no-repeat;
   background-size: 100%;
@@ -441,6 +416,10 @@ h1.nombre {
   justify-content: flex-start;
   list-style-type: disc;
   list-style-position: inside;
+}
+
+.grid-item4 {
+  display: none;
 }
 
 .about-title {
@@ -894,6 +873,19 @@ a:active {
     row-gap: 0;
   }
 
+  .grid-item4 {
+    display: grid;
+    grid-column: 2;
+    grid-row: 2;
+    height: 20vw;
+    width: 20vw;
+    padding: 10vw 0 0 5vw;
+    background-image: url("/css/img-desktop-grid.png");
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: 110% 30%;
+  }
+
   fieldset.contact {
     display: flex;
     flex-direction: column;
@@ -1196,20 +1188,21 @@ a:active {
     grid-row: 7/10;
   }
 
-  #image-geometry-4 {
+  #projectimg3 {
     display: initial;
-    background-image: url(../images/image-geometry_4.svg);
-    background-size: 25%;
-    background-position: right top;
-    grid-column: 4/6;
-    grid-row: 10/12;
+    background-image: url(../images/projectimg3.png);
+    background-size: 65%;
+    background-position: left top;
+    grid-column: 1/3;
+    grid-row: 10;
   }
 
-  #image-geometry-5 {
+  #projectimg4 {
     display: initial;
-    background-image: url(../images/image-geometry_5.svg);
-    background-size: 45%;
-    grid-column: 1/4;
-    grid-row: 10/12;
+    background-image: url(../images/projectimg4.png);
+    background-position: right top;
+    background-size: 50%;
+    grid-column: 5;
+    grid-row: 10;
   }
 }
