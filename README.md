@@ -16,7 +16,7 @@ Additional description about the project and its features.
 
 ## Live Demo
 
-Click here to see the live demo.
+Click here to see the [live demo](https://sergiogval.github.io/#projects).
 
 
 ## Getting Started
