@@ -173,6 +173,15 @@ h1.nombre {
   justify-content: start;
 }
 
+.i1,
+.i2,
+.i3,
+.i4,
+.i5,
+.i6 {
+  max-width: 100vw;
+}
+
 .projectcard1 {
   background-image: url(/images/project1.png);
   background-repeat: no-repeat;
@@ -872,13 +881,13 @@ a:active {
     height: 20vw;
     width: 20vw;
     padding: 10vw 0 0 5vw;
-    background-image: url("/css/img-desktop-grid.png");
+    background-image: url("/images/img-desktop-grid.png");
     background-repeat: no-repeat;
     background-size: auto;
     background-position: 110% 30%;
   }
 
-  fieldset.contact {
+  .contact {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -889,7 +898,7 @@ a:active {
     padding: 0;
     margin-block: 0;
     box-sizing: border-box;
-    background-image: url("/css/formimg1.png"), url("/css/formimg2.png");
+    background-image: url("/images/formimg1.png"), url("/images/formimg2.png");
     background-repeat: no-repeat, no-repeat;
     background-position: left top, right bottom;
     background-size: 20%, 20%;
@@ -932,7 +941,7 @@ a:active {
     padding: 1%;
     box-sizing: border-box;
     column-gap: 2%;
-    text-align: left; /* row-gap: 2%; */
+    text-align: left;
   }
 
   .message-label {
@@ -990,8 +999,9 @@ a:active {
     padding: 0;
   }
 
-  .menu-items:hover > a,
-  .menu-items:focus > a {
+  .menu-items:hover,
+  .menu-items:focus,
+  .menu-items:active {
     border-bottom: solid 2px #1a2236;
   }
 
@@ -1132,7 +1142,7 @@ a:active {
   .four .project-summary,
   .five .project-summary,
   .six .project-summary {
-    font-size: 0.5em;
+    font-size: 1em;
     transform: translateY(20vw);
     background-color: rgba(0, 0, 0, 0);
     transition: transform 1s, background-color 1s;
