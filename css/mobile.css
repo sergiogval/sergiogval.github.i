@@ -7,10 +7,6 @@
   box-sizing: border-box;
 }
 
-link {
-  display: block;
-}
-
 body {
   font-size: 62.5%;
   box-sizing: border-box;
@@ -936,7 +932,7 @@ a:active {
     padding: 1%;
     box-sizing: border-box;
     column-gap: 2%;
-    text-align: left; 
+    text-align: left;
   }
 
   .message-label {
