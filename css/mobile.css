@@ -5,10 +5,11 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  outline: none;
 }
 
 body {
-  font-size: 62.5%;
+  font-size: 100%;
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -26,17 +27,16 @@ header {
 
 .home {
   display: flex;
-  flex-direction: column;
 }
 
-h1.nombre {
+.nombre {
   font-family: "Playfair Display", serif;
   font-size: 7em;
   font-weight: normal;
   letter-spacing: 2px;
   line-height: 1em;
   font-stretch: expanded;
-  padding: 1% 5% 0 5%;
+  top: 10%;
   background: transparent;
   background-color: transparent;
   margin: 5%;
@@ -45,12 +45,13 @@ h1.nombre {
 .intro {
   font-family: "poppins", sans-serif;
   color: black;
-  font-size: 1.2em;
+  font-size: 1em;
   font-weight: 300;
-  line-height: 1.5em;
-  font-stretch: expanded;
-  padding: 0 5% 0 5%;
+  line-height: 1em;
+  font-stretch: normal;
+  padding: 0;
   margin: 5%;
+  text-align: left;
 }
 
 .ham {
@@ -58,7 +59,6 @@ h1.nombre {
 }
 
 /* label, */
-.menu-items,
 .btn4,
 .homeimg,
 .dotshome,
@@ -66,11 +66,20 @@ h1.nombre {
   display: none;
 }
 
+.menu-items > li > a {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #a6a6a6;
+  cursor: pointer;
+}
+
 .btn1 {
   background-color: #1a2236;
   color: #fff;
   font-family: "poppins", sans-serif;
-  font-size: 1.6em;
+  font-size: 1.4em;
   font-weight: normal;
   letter-spacing: 2px;
   line-height: 1em;
@@ -78,11 +87,11 @@ h1.nombre {
   justify-content: center;
   align-items: center;
   margin: 5%;
-  padding: 5% 20% 5% 20%;
-  width: 90%;
+  padding: 5% 15% 5% 15%;
+  width: 80%;
   outline: none;
   cursor: pointer;
-  border: solid 2px #e5e5e5;
+  text-align: center;
 }
 
 .btn2 {
@@ -156,7 +165,7 @@ h1.nombre {
   background-position: center top;
   mix-blend-mode: multiply;
   height: 100%;
-  width: 100%;
+  width: 100vw;
   margin: 10% 0;
   padding-top: 6%;
 }
@@ -180,6 +189,8 @@ h1.nombre {
 .i5,
 .i6 {
   max-width: 100vw;
+  margin: 0;
+  padding: 0;
 }
 
 .projectcard1 {
@@ -256,13 +267,15 @@ h1.nombre {
 }
 
 .projectcard {
+  font-family: poppins, sans-serif;
+  font-weight: normal;
   display: flex;
   flex-direction: column;
   background-color: #1a2236;
   color: #fff;
-  padding: 2%;
-  margin-top: -1%;
-  width: 100vw;
+  padding: 0;
+  margin: 0;
+  width: auto;
 }
 
 .projecttitle {
@@ -280,6 +293,7 @@ h1.nombre {
 }
 
 .languagebadge {
+  font-size: 0.7em;
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
@@ -547,9 +561,9 @@ footer {
   border: solid 2px #1a2236;
 }
 
-a:visited,
-a:link,
-a:active {
+li > a:visited,
+li > a:link,
+li > a:active {
   text-decoration: none;
   color: #1a2236;
 }
@@ -566,6 +580,7 @@ a:active {
     padding: 0;
     box-sizing: border-box;
     font-size: 80%;
+    width: inherit;
   }
 
   header {
@@ -598,8 +613,9 @@ a:active {
     width: 100vw;
     justify-content: center;
     align-items: center;
-    margin: 0;
+    margin-bottom: 1px;
     padding: 0;
+    z-index: 100;
   }
 
   .menu-items {
@@ -607,16 +623,16 @@ a:active {
     flex-direction: row;
     list-style: none;
     text-transform: none;
-    margin: 1%;
-    padding: 1%;
+    margin: 0 1%;
+    padding: 0;
     font-family: "Poppins", sans-serif;
     font-size: 1.4em;
     font-weight: 500;
     line-height: 1.5em;
+    cursor: pointer;
   }
 
   .container {
-    position: absolute;
     display: flex;
     height: 100%;
     width: 98vw;
@@ -645,14 +661,14 @@ a:active {
 
   .nombre {
     display: flex;
-    line-height: 1.5em;
+    line-height: 1.2em;
     box-sizing: border-box;
-    padding-top: 1%;
+    padding: 0;
     margin: 0;
     align-items: start;
     justify-content: start;
     font-weight: 300;
-    font-size: 9em;
+    font-size: 6em;
   }
 
   h2.nombre {
@@ -660,7 +676,7 @@ a:active {
     line-height: 1.5em;
     box-sizing: border-box;
     padding-top: 1%;
-    margin: 0;
+    margin-block: 3%;
     align-items: start;
     justify-content: start;
     font-weight: 300;
@@ -669,13 +685,13 @@ a:active {
 
   .intro {
     line-height: normal;
-    padding: -1%;
-    margin: 1%;
-    width: 40%;
-    font-size: 1.5em;
+    width: 100%;
+    font-size: 1.2em;
     font-weight: 400;
     text-align: justify;
     align-items: center;
+    margin: 4% 0 0 0;
+    letter-spacing: 0.1em;
   }
 
   .introabout {
@@ -683,8 +699,8 @@ a:active {
     max-width: 80%;
     height: max-content;
     font-size: 1.5em;
-    font-weight: 300;
-    text-align: justify;
+    font-weight: 400;
+    text-align: left;
     color: #1a2236;
   }
 
@@ -695,12 +711,12 @@ a:active {
     font-size: 1.5em;
     font-weight: 300;
     text-align: justify;
+    margin: 0;
   }
 
   .btn1 {
-    width: 25%;
-    padding: 2% 5%;
-    margin-bottom: 20vh;
+    width: 50%;
+    padding: 0 2%;
     font-size: 1em;
     flex-wrap: nowrap;
     height: 5vh;
@@ -720,8 +736,8 @@ a:active {
 
   .btn4 {
     width: 25%;
-    padding: 2% 2%;
-    margin: 0;
+    padding: 1% 2%;
+    margin-block: 5%;
     font-size: 1em;
     flex-wrap: nowrap;
     text-align: center;
@@ -729,24 +745,26 @@ a:active {
 
   .desktophome {
     position: absolute;
+    padding: 10%;
     display: flex;
     justify-content: start;
     align-items: start;
     flex-direction: column;
-    width: 90%;
-    padding: 1%;
-    margin: 1%;
+    right: 50%;
+    width: 50%;
     box-sizing: border-box;
   }
 
   .homeimg {
     display: flex;
     position: absolute;
-    height: 100vh;
-    width: 50vw;
+    width: 50%;
     padding: 0;
-    left: 48%;
-    justify-content: center;
+    left: 50%;
+  }
+
+  .menu-items:hover {
+    border-bottom: solid 2px #1a2236;
   }
 
   .aboutheader {
@@ -777,7 +795,7 @@ a:active {
     box-sizing: border-box;
     text-align: left;
     justify-content: right;
-    background-image: url(dots.png);
+    background-image: url("..//images/dots.png2");
     background-repeat: no-repeat;
     background-size: auto;
     background-position: center bottom;
@@ -803,6 +821,8 @@ a:active {
     grid-template-rows: 1fr 1fr;
     justify-content: flex-start;
     font-family: "poppins", sans-serif;
+    margin: 0;
+    padding: 0;
   }
 
   .aboutcard {
@@ -826,10 +846,13 @@ a:active {
     margin-block: 0;
     row-gap: 0;
     display: flex;
+    column-gap: 0;
     flex-direction: column;
     justify-content: left;
     list-style-type: disc;
     list-style-position: inside;
+    padding-left: 10%;
+    margin: 0;
   }
 
   .grid-item2 {
@@ -846,11 +869,14 @@ a:active {
     background-position: right bottom;
     margin-block: 0;
     row-gap: 0;
+    column-gap: 0;
     display: flex;
     flex-direction: column;
     justify-content: left;
     list-style-type: disc;
     list-style-position: inside;
+    margin: 0;
+    padding-left: 10%;
   }
 
   .grid-item3 {
@@ -872,6 +898,9 @@ a:active {
     list-style-position: inside;
     margin-block: 0;
     row-gap: 0;
+    column-gap: 0;
+    margin: 0;
+    padding-left: 10%;
   }
 
   .grid-item4 {
@@ -880,11 +909,13 @@ a:active {
     grid-row: 2;
     height: 20vw;
     width: 20vw;
-    padding: 10vw 0 0 5vw;
+    padding: 9.5vw 0 0 3vw;
     background-image: url("/images/img-desktop-grid.png");
     background-repeat: no-repeat;
-    background-size: auto;
-    background-position: 110% 30%;
+    background-size: 30%;
+    background-position: 100% 25%;
+    margin: 0;
+    list-style-type: none;
   }
 
   .contact {
@@ -909,7 +940,7 @@ a:active {
     color: #1a2236;
     font-weight: 500;
     padding: 0;
-    margin: 0;
+    margin: 5% 0 0 0;
     font-size: 5.5em;
     width: 40vw;
     text-align: center;
@@ -925,7 +956,7 @@ a:active {
     justify-content: center;
     height: 100%;
     width: 19vw;
-    margin: 0 1%;
+    margin: 0;
     padding: 6%;
     box-sizing: border-box;
   }
@@ -937,8 +968,8 @@ a:active {
     align-items: center;
     justify-content: space-evenly;
     width: 40%;
-    margin: 1%;
-    padding: 1%;
+    margin: 0;
+    padding: 0 0 1% 0;
     box-sizing: border-box;
     column-gap: 2%;
     text-align: left;
@@ -961,7 +992,7 @@ a:active {
     justify-content: center;
     width: 40%;
     min-height: 18%;
-    margin-bottom: 2%;
+    margin: 0%;
     padding: 2%;
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
@@ -999,10 +1030,8 @@ a:active {
     padding: 0;
   }
 
-  .menu-items:hover,
-  .menu-items:focus,
-  .menu-items:active {
-    border-bottom: solid 2px #1a2236;
+  .socialicon:hover {
+    transform: scale(1.1);
   }
 
   .container-about2 {
@@ -1011,7 +1040,7 @@ a:active {
     position: relative;
     align-items: center;
     justify-content: center;
-    width: 50vw;
+    width: 50%;
     height: 50vw;
     margin: 0;
     padding: 10%;
@@ -1028,9 +1057,9 @@ a:active {
     padding: 10%;
   }
 
-  .thumbnail {
+  /* .thumbnail {
     display: none;
-  }
+  } */
 
   .projects {
     background-image: none;
@@ -1038,6 +1067,7 @@ a:active {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 0.7fr 1fr 1fr;
     grid-template-rows: 37.4vw 4vw 8vw 6vw 6vw 12vw repeat(3, 6vw) 9vw 9vw;
+    width: auto;
   }
 
   .projects-title {
@@ -1050,7 +1080,8 @@ a:active {
     background-position: right bottom;
     background-size: 40%;
     margin: 0;
-    padding: 50% 0;
+
+    /* padding: 50% 0; */
     transform: rotate(-90deg);
     font-size: 7em;
     align-items: end;
