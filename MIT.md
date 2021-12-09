@@ -1,4 +1,4 @@
-## Copyright 2021, [Sergio Valadez]
+## Copyright 2021, [Sergio Guadalupe Valadez Rivera]
 
 ###### Please delete this line and the next one
 ###### webpage/website can be a webpage/website, a web app, a software and so on
