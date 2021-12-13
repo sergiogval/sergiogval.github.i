@@ -1,32 +1,123 @@
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
-* {
-  margin: 0;
-  padding: 0;
+html {
   box-sizing: border-box;
-  outline: none;
+}
+
+*,
+*::before,
+*::after {
+  border: solid 1px red;
+  box-sizing: inherit;
 }
 
 body {
-  font-size: 100%;
-  box-sizing: border-box;
   margin: 0;
   padding: 0;
+  line-height: 1.6;
+  font-family: "Poppins", sans-serif;
+  outline: none;
+  overflow: scroll;
+}
+
+h1,
+h2 {
+  font-family: "Playfair Display", serif;
+  font-weight: normal;
 }
 
 header {
   display: flex;
-  height: 10vh;
-  justify-content: end;
-  background-image: url("..//images/landing.png");
-  background-size: 24%;
-  background-repeat: no-repeat;
-  background-position: left top;
+  height: 12vh;
+  width: 100%;
+
+  /* position: static; */
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 10vh;
+  width: inherit;
+}
+
+.ham {
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  top: 1em;
+  right: 1.6em;
+  transition: 0.2s 0.1s;
+  height: 3.5em;
+  border: none;
+  background: white;
+  margin: 3%;
+}
+
+.ham span {
+  background-color: black;
+  display: flex;
+  height: 3px;
+  width: 28px;
+  margin: 5px auto;
+  border-radius: 2px;
+}
+
+.logo {
+  display: flex;
+  flex-direction: row;
+  overflow-x: visible;
+}
+
+.logo-mobile2 {
+  margin-right: -26%;
+  top: 0;
+  position: relative;
+  left: 0;
+}
+
+.logo-mobile1 {
+  top: 0;
+  position: static;
+}
+
+.menu {
+  background-color: transparent;
+  color: #1a2236;
+  list-style: none;
+  flex-direction: column;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  justify-content: space-around;
+  align-items: center;
+  height: 90vw;
+  width: 100%;
+
+  /* display: none; */
+  position: absolute;
+  opacity: 1;
+}
+
+.menu li {
+  color: black;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  transition: opacity 5s ease-out;
+  width: 100%;
+  text-align: center;
 }
 
 .home {
   display: flex;
+  margin-top: 15%;
 }
 
 .nombre {
@@ -36,7 +127,6 @@ header {
   letter-spacing: 2px;
   line-height: 1em;
   font-stretch: expanded;
-  top: 10%;
   background: transparent;
   background-color: transparent;
   margin: 5%;
@@ -54,25 +144,12 @@ header {
   text-align: left;
 }
 
-.ham {
-  display: block;
-}
-
-/* label, */
+label,
 .btn4,
 .homeimg,
 .dotshome,
 .dotsproject {
   display: none;
-}
-
-.menu-items > li > a {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-color: #a6a6a6;
-  cursor: pointer;
 }
 
 .btn1 {
@@ -536,6 +613,7 @@ footer {
   flex-direction: row;
   width: 95vw;
   justify-content: space-around;
+  list-style-type: none;
 }
 
 .name:focus,
@@ -581,6 +659,7 @@ li > a:active {
     box-sizing: border-box;
     font-size: 80%;
     width: inherit;
+    overflow: auto;
   }
 
   header {
@@ -602,16 +681,20 @@ li > a:active {
     box-sizing: content-box;
   }
 
+  .logo,
+  .logo-mobile1,
+  .logo-mobile2,
   .ham {
     display: none;
   }
 
   .menu {
+    color: #1a2236;
     display: flex;
     flex-direction: row;
     height: 10vh;
-    width: 100vw;
-    justify-content: center;
+    width: 40vw;
+    justify-content: space-around;
     align-items: center;
     margin-bottom: 1px;
     padding: 0;
@@ -619,6 +702,7 @@ li > a:active {
   }
 
   .menu-items {
+    color: #1a2236;
     display: flex;
     flex-direction: row;
     list-style: none;
@@ -653,6 +737,7 @@ li > a:active {
     width: 100%;
     height: 100vh;
     box-sizing: border-box;
+    margin-top: 0;
   }
 
   .home > * {
@@ -1025,11 +1110,13 @@ li > a:active {
     width: 30vw;
     padding: 0;
     margin: 3em;
+    list-style-image: none;
   }
 
   .socialicon {
     margin: 0;
     padding: 0;
+    list-style-image: none;
   }
 
   .socialicon:hover {
