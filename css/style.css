@@ -18,7 +18,7 @@ body {
   line-height: 1.6;
   font-family: "Poppins", sans-serif;
   outline: none;
-  overflow: scroll;
+  overflow: hidden;
 }
 
 h1,
@@ -37,8 +37,8 @@ header {
 
 nav {
   display: flex;
-  flex-direction: row;
-  align-items: center;
+  flex-direction: column;
+  align-items: flex-start;
   justify-content: space-between;
   min-height: 10vh;
   width: inherit;
@@ -96,23 +96,15 @@ nav {
   align-items: center;
   height: 90vw;
   width: 100%;
-
+  transition: opacity 5s ease-out;
   /* display: none; */
   position: absolute;
   opacity: 1;
 }
 
 .menu li {
-  color: black;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  transition: opacity 5s ease-out;
+  padding: 01.3em;
   width: 100%;
-  text-align: center;
 }
 
 .home {
