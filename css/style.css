@@ -45,16 +45,18 @@ nav {
 }
 
 .ham {
+  position: absolute;
   display: flex;
   flex-direction: column;
   cursor: pointer;
-  top: 1em;
+  top: 0.3em;
   right: 1.6em;
   transition: 0.2s 0.1s;
   height: 3.5em;
   border: none;
   background: white;
   margin: 3%;
+  padding: 0;
 }
 
 .ham span {
@@ -64,6 +66,10 @@ nav {
   width: 28px;
   margin: 5px auto;
   border-radius: 2px;
+}
+
+.ham span:last-child {
+  margin-bottom: 0;
 }
 
 .logo {
@@ -85,13 +91,14 @@ nav {
 }
 
 .menu {
-  background-color: transparent;
+  background-color: white;
   color: #1a2236;
   list-style: none;
   flex-direction: column;
   text-align: center;
-  padding: 0;
-  margin: 0;
+  padding: 24vh 2.7em;
+
+  margin-top: 24vh;
   justify-content: space-around;
   align-items: center;
   height: 90vw;
@@ -103,7 +110,7 @@ nav {
 }
 
 .menu li {
-  padding: 01.3em;
+  padding: 1.3em;
   width: 100%;
 }
 
