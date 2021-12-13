@@ -104,7 +104,7 @@ nav {
   height: 90vw;
   width: 100%;
   transition: opacity 5s ease-out;
-  /* display: none; */
+  display: none;
   position: absolute;
   opacity: 1;
 }
