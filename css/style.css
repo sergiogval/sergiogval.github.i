@@ -92,9 +92,21 @@ span {
   position: fixed;
   animation: muestraMenu 350ms ease-in-out both;
   justify-content: center;
-  height: 60vh;
+  height: 50vh;
   top: 5vh;
   z-index: 1;
+  background-image:
+    url('../images/dots-mobile.png'),
+    url('../images/dots-mobile.png');
+  background-repeat:
+    no-repeat,
+    no-repeat;
+  background-size:
+    15%,
+    15%;
+  background-position:
+    90% 10%,
+    10% 90%;
 }
 
 .br-1.animated {
