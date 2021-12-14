@@ -41,6 +41,7 @@ nav {
   align-items: flex-start;
   justify-content: space-between;
   width: inherit;
+  height: 14vh;
 }
 
 .ham {
@@ -53,7 +54,6 @@ nav {
   border: none;
   background: transparent;
   padding: 0;
-  height: 5%;
   top: 5%;
   box-sizing: inherit;
 }
@@ -119,15 +119,16 @@ nav {
   flex-direction: column;
   text-align: center;
   padding: 24vh 2.7em;
-  margin-top: 14vh;
+  margin-block: 14vh;
   justify-content: space-around;
   align-items: center;
-  height: 90vw;
+  height: 70vh;
   width: 100%;
   transition: opacity 5s ease-out;
   display: none;
   position: absolute;
   opacity: 1;
+  z-index: 100;
 }
 
 .menu li {
