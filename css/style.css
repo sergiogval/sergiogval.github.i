@@ -120,7 +120,7 @@ span {
 }
 
 .logo-mobile1 {
-  top: px;
+  top: 0;
   margin-left: 0%;
   right: 84%;
   left: 2px;
@@ -130,7 +130,7 @@ span {
 
 .logo-mobile2 {
   margin-right: -50%;
-  top: 0px;
+  top: 0;
   left: 50px;
   z-index: 10;
   position: absolute;
