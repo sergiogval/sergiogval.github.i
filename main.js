@@ -28,4 +28,3 @@ links.forEach((link) => {
     });
   });
 });
-
