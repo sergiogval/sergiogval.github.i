@@ -17,7 +17,7 @@ body {
   line-height: 1.6;
   font-family: "Poppins", sans-serif;
   outline: none;
-  overflow: scroll;
+  overflow: hidden;
   font-size: 62.8%;
 }
 
@@ -45,7 +45,7 @@ nav {
 }
 
 .ham {
-  position: absolute;
+  position: fixed;
   display: flex;
   flex-direction: column;
   cursor: pointer;
@@ -80,14 +80,14 @@ span {
   height: 88vh;
   width: 100%;
   display: none;
-  position: absolute;
+  position: fixed;
   opacity: 1;
   top: 9vh;
 }
 
 .menu.active {
   display: flex;
-  position: absolute;
+  position: fixed;
   animation: muestraMenu 350ms ease-in-out both;
   justify-content: center;
   height: 60vh;
