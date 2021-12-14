@@ -89,7 +89,11 @@ span {
   display: flex;
   position: absolute;
   animation: muestraMenu 350ms ease-in-out both;
+  justify-content: center;
+  height: 60vh;
+  top: 5vh;
 }
+
 
 .br-1.animated {
   transform: rotate(-45deg) translate(-10px, 11px);
@@ -748,6 +752,7 @@ li > a:active {
     margin: 0 !important;
     padding: 0;
     z-index: 100;
+    top: 0;
   }
 
   .container {
@@ -772,6 +777,7 @@ li > a:active {
     height: 100vh;
     box-sizing: border-box;
     margin-top: 0;
+    background-image: none;
   }
 
   .home > * {

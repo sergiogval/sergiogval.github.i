@@ -15,4 +15,17 @@ ham.addEventListener('click', () => {
   });
 });
 
-// create an array of objects with the data of the project in the index.html file.
+// create a code to close the mobile menu when click on any link
+const links = document.querySelectorAll('.menu a');
+links.forEach((link) => {
+  link.addEventListener('click', () => {
+    menu.classList.remove('active');
+    logoclosed.classList.remove('active');
+    logoclosed1.classList.remove('active');
+    mobileImage.style.backgroundImage = "url('images/landing2.png')";
+    close.forEach((child) => {
+      child.classList.remove('animated');
+    });
+  });
+});
+
