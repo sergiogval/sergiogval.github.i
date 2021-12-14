@@ -53,9 +53,11 @@ nav {
   transition: 0.2s 0.1s;
   border: none;
   background: transparent;
+  background-color: white;
   padding: 0;
   top: 5%;
   box-sizing: inherit;
+  z-index: 1;
 }
 
 span {
@@ -92,6 +94,7 @@ span {
   justify-content: center;
   height: 60vh;
   top: 5vh;
+  z-index: 1;
 }
 
 .br-1.animated {
@@ -296,8 +299,8 @@ label,
   mix-blend-mode: multiply;
   height: 100%;
   width: 100vw;
-  margin: 10% 0;
-  padding-top: 6%;
+  margin: 25% 0;
+  padding: 0;
 }
 
 .projects-title {
