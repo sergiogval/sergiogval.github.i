@@ -1,6 +1,10 @@
 const ham = document.querySelector('.ham');
-const hl = document.querySelector('.menu');
+const menu = document.querySelector('.menu');
+const close = document.querySelectorAll('.ham span');
 
 ham.addEventListener('click', () => {
-  hl.style.display = 'block';
-});
+  menu.classList.toggle('activate');
+  close.forEach(child => {
+    child.classList.toggle('animated');
+  });
+}); 

@@ -8,7 +8,6 @@ html {
 *,
 *::before,
 *::after {
-  border: solid 1px red;
   box-sizing: inherit;
 }
 
@@ -19,6 +18,7 @@ body {
   font-family: "Poppins", sans-serif;
   outline: none;
   overflow: hidden;
+  font-size: 62.8%;
 }
 
 h1,
@@ -58,13 +58,49 @@ nav {
   box-sizing: inherit;
 }
 
-.ham span {
+span {
   background-color: black;
   display: flex;
   height: 5px;
   width: 3em;
   margin: 5px auto;
   border-radius: 2px;
+}
+
+.menu {
+  background-color: white;
+  color: #1a2236;
+  font-size: 2.5em;
+  list-style: none;
+  flex-direction: column;
+  text-align: center;
+  padding: 14vh 2.7em;
+  margin-block: 14vh;
+  justify-content: space-around;
+  align-items: center;
+  height: 90vw;
+  width: 100%;
+  display: none;
+  position: absolute;
+  opacity: 1;
+}
+
+.menu.activate {
+  display: flex;
+  position: absolute;
+  animation: muestraMenu 350ms ease-in-out both;
+}
+
+.br-1.animated {
+  transform: rotate(-45deg) translate(-10px, 10px);
+}
+
+.br-2.animated {
+  opacity: 0;
+}
+
+.br-3.animated {
+  transform: rotate(45deg) translate(-10px, -10px);
 }
 
 @keyframes muestraMenu {
@@ -75,23 +111,6 @@ nav {
   to {
     opacity: 1;
   }
-}
-
-.menu.activado {
-  display: flex;
-  animation: muestraMenu 350ms ease-in-out both;
-}
-
-.br-1.animado {
-  transform: rotate(-45deg) translate(-10px, 8px);
-}
-
-.br-2.animado {
-  opacity: 0;
-}
-
-.br-3.animado {
-  transform: rotate(45deg) translate(-10px, -8px);
 }
 
 .logo {
@@ -112,24 +131,6 @@ nav {
   position: static;
 }
 
-.menu {
-  background-color: white;
-  color: #1a2236;
-  list-style: none;
-  flex-direction: column;
-  text-align: center;
-  padding: 24vh 2.7em;
-  margin-block: 14vh;
-  justify-content: space-around;
-  align-items: center;
-  height: 70vh;
-  width: 100%;
-  transition: opacity 5s ease-out;
-  display: none;
-  position: absolute;
-  opacity: 1;
-  z-index: 100;
-}
 
 .menu li {
   padding: 1.3em;
@@ -156,7 +157,7 @@ nav {
 .intro {
   font-family: "poppins", sans-serif;
   color: black;
-  font-size: 1em;
+  font-size: 2.5em;
   font-weight: 300;
   line-height: 1em;
   font-stretch: normal;
