@@ -17,7 +17,7 @@ body {
   line-height: 1.6;
   font-family: "Poppins", sans-serif;
   outline: none;
-  overflow: hidden;
+  overflow: scroll;
   font-size: 62.8%;
 }
 
@@ -74,25 +74,25 @@ span {
   list-style: none;
   flex-direction: column;
   text-align: center;
-  padding: 14vh 2.7em;
-  margin-block: 14vh;
-  justify-content: space-around;
-  align-items: center;
-  height: 90vw;
+  padding: 1vh 2.7em;
+  justify-content: center;
+  align-items: end;
+  height: 88vh;
   width: 100%;
   display: none;
   position: absolute;
   opacity: 1;
+  top: 9vh;
 }
 
-.menu.activate {
+.menu.active {
   display: flex;
   position: absolute;
   animation: muestraMenu 350ms ease-in-out both;
 }
 
 .br-1.animated {
-  transform: rotate(-45deg) translate(-10px, 10px);
+  transform: rotate(-45deg) translate(-10px, 11px);
 }
 
 .br-2.animated {
@@ -100,7 +100,7 @@ span {
 }
 
 .br-3.animated {
-  transform: rotate(45deg) translate(-10px, -10px);
+  transform: rotate(45deg) translate(-10px, -11px);
 }
 
 @keyframes muestraMenu {
@@ -116,19 +116,48 @@ span {
 .logo {
   display: flex;
   flex-direction: row;
-  overflow-x: visible;
-}
-
-.logo-mobile2 {
-  margin-right: -26%;
-  top: 0;
-  position: relative;
-  left: 0;
+  overflow: auto;
 }
 
 .logo-mobile1 {
+  top: px;
+  margin-left: 0%;
+  right: 84%;
+  left: 2px;
+  z-index: 10;
+  position: absolute;
+}
+
+.logo-mobile2 {
+  margin-right: -50%;
+  top: 0px;
+  left: 50px;
+  z-index: 10;
+  position: absolute;
+}
+
+.logo-mobile3 {
   top: 0;
-  position: static;
+  margin-left: 10%;
+  left: 64.5%;
+  z-index: -10;
+  position: relative;
+}
+
+.logo-mobile4 {
+  margin-right: -101%;
+  top: 0;
+  left: -2px;
+  z-index: -10;
+  position: relative;
+}
+
+.logo-mobile1.active {
+  display: none !important;
+}
+
+.logo-mobile2.active {
+  display: none !important;
 }
 
 .menu li {
@@ -187,7 +216,7 @@ label,
   margin: 5%;
   padding: 5% 15% 5% 15%;
   width: 80%;
-  outline: none;
+  outline: none !important;
   cursor: pointer;
   text-align: center;
 }
@@ -202,7 +231,7 @@ label,
   align-items: center;
   margin: 3%;
   padding: 3% 2%;
-  outline: none;
+  outline: none !important;
   box-sizing: content-box;
   width: 50%;
   background-image: url("..//images/Union.png");
@@ -228,7 +257,7 @@ label,
   margin: 5%;
   padding: 5% 20% 5% 10%;
   width: 90%;
-  outline: none;
+  outline: none !important;
   cursor: pointer;
   background-image: url("..//images/download.png");
   background-repeat: no-repeat;
@@ -250,7 +279,7 @@ label,
   align-items: center;
   margin: 0 5% 0 5%;
   width: 90%;
-  outline: none;
+  outline: none !important;
   cursor: pointer;
   text-align: center;
 }
@@ -470,7 +499,7 @@ label,
   height: 73vw;
   max-width: 73vw;
   background-color: #1c528a;
-  background-image: url("languages.png");
+  background-image: url("..//images/languages.png");
   background-repeat: no-repeat;
   background-size: auto;
   background-position: right bottom;
@@ -491,7 +520,7 @@ label,
   height: 73vw;
   max-width: 73vw;
   background-color: #e2505c;
-  background-image: url("frameworks.png");
+  background-image: url("..//images/frameworks.png");
   background-repeat: no-repeat;
   background-size: auto;
   background-position: right bottom;
@@ -512,7 +541,7 @@ label,
   height: 73vw;
   max-width: 73vw;
   background-color: #febf52;
-  background-image: url("skills.png");
+  background-image: url("..//images/skills.png");
   background-repeat: no-repeat;
   background-size: auto;
   background-position: right bottom;
@@ -556,7 +585,7 @@ fieldset {
   border: none;
   text-align: center;
   background-color: #f9f9fa;
-  background-image: url("landing.png");
+  background-image: url("..//images/landing.png");
   background-repeat: no-repeat;
   background-position: left top;
   margin-block: 2em;
@@ -622,7 +651,7 @@ footer {
   padding: 5%;
   margin: 3% 2% 5% 1%;
   justify-content: left;
-  background-image: url("download1.png");
+  background-image: url("..//images/download1.png");
   background-repeat: no-repeat;
   background-size: auto;
   background-position: 10em center;
@@ -719,21 +748,6 @@ li > a:active {
     margin: 0 !important;
     padding: 0;
     z-index: 100;
-  }
-
-  .menu-items {
-    color: #1a2236;
-    display: flex;
-    flex-direction: row;
-    list-style: none;
-    text-transform: none;
-    margin: 0;
-    padding: 0;
-    font-family: "Poppins", sans-serif;
-    font-size: 1.4em;
-    font-weight: 500;
-    line-height: 1.5em;
-    cursor: pointer;
   }
 
   .container {
@@ -945,7 +959,7 @@ li > a:active {
     height: 20vw;
     width: 20vw;
     background-color: #1c528a;
-    background-image: url("languages.png");
+    background-image: url("..//images/languages.png");
     background-repeat: no-repeat;
     background-size: auto;
     background-position: right bottom;
@@ -969,7 +983,7 @@ li > a:active {
     height: 20vw;
     width: 20vw;
     background-color: #e2505c;
-    background-image: url("frameworks.png");
+    background-image: url("..//images/frameworks.png");
     background-repeat: no-repeat;
     background-size: auto;
     background-position: right bottom;
@@ -993,7 +1007,7 @@ li > a:active {
     height: 20vw;
     width: 20vw;
     background-color: #febf52;
-    background-image: url("skills.png");
+    background-image: url("..//images/skills.png");
     background-repeat: no-repeat;
     background-size: auto;
     background-position: right bottom;
