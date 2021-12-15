@@ -57,7 +57,7 @@ nav {
   padding: 0;
   top: 5%;
   box-sizing: inherit;
-  z-index: 1;
+  z-index: -100;
 }
 
 span {
@@ -185,37 +185,20 @@ span {
 
 .modal-template  {
   position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
+  width: 100vw;
+  height: 100vw;
+  background-color: white;
   z-index: 10;
   /* display: none; */
 }
 
 .modal-content {
-  width: 90vw;
-  height: 90vh;
-  position: absolute;
-  margin: 5%;
-  padding: 2%;
-  background-color: white;
-}
-
-.modal-header {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
   width: 100%;
-  height: 10vh;
-  font-size: 2.5em;
-  font-family: "Playfair Display", serif;
-  font-weight: normal;
-  position: relative;
+  height: 100%;
+  position: initial;
+  margin: 0;
+  padding: 0;
   background-color: white;
-  padding: 1%;
 }
 
 .modal-title {
@@ -234,7 +217,8 @@ span {
 
 .modal-badges {
   display: flex;
-  flex-direction: row;
+  flex-direction: row !important;
+  list-style: none;
   justify-content: center;
   align-items: center;
   width: 100%;
@@ -244,14 +228,16 @@ span {
   font-weight: normal;
   position: absolute;
   padding: 1%;
-}}
+}
 
 .modal-close {
   display: flex;
-  background-image: url("../images/close.png");
-  background-repeat: no-repeat;
-  background-size: 100%;
-  z-index: -9999;
+  position: absolute;
+  right: 3em;
+  top: 3em;
+  Z-index: 9999;
+  margin: 0;
+  padding: 0;
 }
 
 .modal-img {
@@ -264,22 +250,36 @@ span {
   position: absolute;
 }
 
-.modal-body > p {
+.modal-body {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  width: 100%;
-  height: 50%;
-  background-color: #1a2236;
-  color: white;
+  color: #1a2236;
   font-size: 1em;
   font-family: "Playfair Display", serif;
   font-weight: normal;
-  position: relative;
   background-color: white;
+}
+
+.modal-body p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
   padding: 1%;
-  z-index: 9999;
+}
+
+.modal-footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.5em;
+  font-family: "Playfair Display", serif;
+  font-weight: normal;
+  position: absolute;
+  padding: 1%;
 }
 
 
@@ -820,6 +820,7 @@ li > a:active {
     background-repeat: no-repeat;
     background-size: cover;
     max-width: 100%;
+    border: solid 2px red;
   }
 
   body {
@@ -847,6 +848,7 @@ li > a:active {
     background-color: #fff;
     box-sizing: content-box;
     height: 7vh;
+    z-index: -100;
   }
 
   .logo,
@@ -893,6 +895,7 @@ li > a:active {
     box-sizing: border-box;
     margin-top: 0;
     background-image: none;
+    z-index: -100;
   }
 
   .home > * {
@@ -1003,11 +1006,12 @@ li > a:active {
     width: 50%;
     padding: 0;
     left: 50%;
-    z-index: -100;
+    z-index: -90;
   }
 
   .menu > li > a:hover {
     border-bottom: solid 2px #1a2236;
+    z-index: -100;
   }
 
   .aboutheader {
@@ -1497,98 +1501,94 @@ li > a:active {
   }
 
   .modal-template  {
+    font-family: "poppins", sans-serif;
+    font-weight: bold;
+    font-size: 1.5em;
     width: 100vw;
     height: 100vh;
-    background-color: rgba(0, 0, 0, 0.5);
+    background: black;
+    z-index: 999;
+    box-sizing: border-box;
+    position: absolute;
+    margin: 0px;
+    padding: 1.8em;
+    opacity: 1;
     /* display: none; */
+    align-items: center;
+    justify-content: center;
   }
   
   .modal-content {
+    font-family: "poppins", sans-serif;
+    font-weight: bold;
     width: 90%;
     height: 90%;
     position: absolute;
-    margin: 5%;
-    padding: 2%;
     background-color: white;
+    margin: 0 2em 2em 2em;
+    padding:0 5% 5% 5%;
+    display: flex;
+    justify-content: center;
   }
   
-  .modal-header {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 10vh;
-    font-size: 2.5em;
-    font-family: "Playfair Display", serif;
-    font-weight: normal;
-    position: relative;
-    background-color: white;
-    padding: 1%;
-  }
   
   .modal-title {
+    font-family: "poppins", sans-serif;
+    font-weight: bold;
+    font-size: 1.5em;
+    top: 0.5em;
+    left: 1em;
+    width: auto;
+    text-align: left;
     font-size: 2.5em;
     font-family: "Playfair Display", serif;
     font-weight: normal;
     text-align: center;
-    justify-content: center;
+    justify-content: start;
     text-align: center;
-    width: 100%;
     align-items: center;
     display: flex;
     flex-wrap: nowrap;
-    position: absolute;
+    margin-bottom: 0;
+    margin-top: 0;
   }
   
-  .modal-badges {
+  .modal-badge {
+    top: 4em;
+    left: 1em;
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 10vh;
-    font-size: 0.5em;
+    position: inherit;
+    text-align: left;
+    justify-content: space-between;
+    align-items: start;
+    width: 30%;
+    right: 70%;
+    font-size: 1em !important;
     font-family: "Playfair Display", serif;
     font-weight: normal;
-    position: relative;
-    padding: 10%;
+    padding: 1%;
+    margin: 1%;
+    flex-wrap: nowrap;
+    list-style: none;
+    border: solid 2px #f5f5f5;
   }}
   
   .modal-close {
     display: flex;
     position: absolute;
-    background-image: url("../images/close.png");
-    background-repeat: no-repeat;
-    background-size: 100%;
-    z-index: -9999;
+    right: 4em;
+    top: 4em;
   }
   
   .modal-img {
-    width: 86vw;
-    height: 50vw;
     background-position: center;
     background-repeat: no-repeat;
-    top: 70%;
-    padding: 2%;
-    position: absolute;
+    top: 20%
   }
-  
-  .modal-body > p {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 50%;
-    background-color: #1a2236;
-    color: white;
-    font-size: 1em;
-    font-family: "Playfair Display", serif;
-    font-weight: normal;
-    position: relative;
-    background-color: white;
-    padding: 1%;
-    z-index: -9999;
+
+  div > p {
+    color:#1c528a;
   }
+
 }
