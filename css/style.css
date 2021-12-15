@@ -17,7 +17,7 @@ body {
   line-height: 1.6;
   font-family: "Poppins", sans-serif;
   outline: none;
-  overflow: hidden;
+  overflow: scroll;
   font-size: 62.8%;
 }
 
@@ -182,6 +182,107 @@ span {
   padding: 1.3em;
   width: 100%;
 }
+
+.modal-template  {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 10;
+  /* display: none; */
+}
+
+.modal-content {
+  width: 90vw;
+  height: 90vh;
+  position: absolute;
+  margin: 5%;
+  padding: 2%;
+  background-color: white;
+}
+
+.modal-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 10vh;
+  font-size: 2.5em;
+  font-family: "Playfair Display", serif;
+  font-weight: normal;
+  position: relative;
+  background-color: white;
+  padding: 1%;
+}
+
+.modal-title {
+  font-size: 2.5em;
+  font-family: "Playfair Display", serif;
+  font-weight: normal;
+  text-align: center;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  align-items: center;
+  display: flex;
+  flex-wrap: nowrap;
+  position: absolute;
+}
+
+.modal-badges {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 10vh;
+  font-size: 0.5em;
+  font-family: "Playfair Display", serif;
+  font-weight: normal;
+  position: absolute;
+  padding: 1%;
+}}
+
+.modal-close {
+  display: flex;
+  background-image: url("../images/close.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  z-index: -9999;
+}
+
+.modal-img {
+  width: 86vw;
+  height: 50vw;
+  background-position: center;
+  background-repeat: no-repeat;
+  top: 70%;
+  padding: 2%;
+  position: absolute;
+}
+
+.modal-body > p {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 50%;
+  background-color: #1a2236;
+  color: white;
+  font-size: 1em;
+  font-family: "Playfair Display", serif;
+  font-weight: normal;
+  position: relative;
+  background-color: white;
+  padding: 1%;
+  z-index: 9999;
+}
+
+
 
 .home {
   display: flex;
@@ -893,6 +994,7 @@ li > a:active {
     right: 50%;
     width: 50%;
     box-sizing: border-box;
+    z-index: -100;
   }
 
   .homeimg {
@@ -901,6 +1003,7 @@ li > a:active {
     width: 50%;
     padding: 0;
     left: 50%;
+    z-index: -100;
   }
 
   .menu > li > a:hover {
@@ -1391,5 +1494,101 @@ li > a:active {
   .i5,
   .i6 {
     display: none;
+  }
+
+  .modal-template  {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* display: none; */
+  }
+  
+  .modal-content {
+    width: 90%;
+    height: 90%;
+    position: absolute;
+    margin: 5%;
+    padding: 2%;
+    background-color: white;
+  }
+  
+  .modal-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 10vh;
+    font-size: 2.5em;
+    font-family: "Playfair Display", serif;
+    font-weight: normal;
+    position: relative;
+    background-color: white;
+    padding: 1%;
+  }
+  
+  .modal-title {
+    font-size: 2.5em;
+    font-family: "Playfair Display", serif;
+    font-weight: normal;
+    text-align: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    align-items: center;
+    display: flex;
+    flex-wrap: nowrap;
+    position: absolute;
+  }
+  
+  .modal-badges {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 10vh;
+    font-size: 0.5em;
+    font-family: "Playfair Display", serif;
+    font-weight: normal;
+    position: relative;
+    padding: 10%;
+  }}
+  
+  .modal-close {
+    display: flex;
+    position: absolute;
+    background-image: url("../images/close.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    z-index: -9999;
+  }
+  
+  .modal-img {
+    width: 86vw;
+    height: 50vw;
+    background-position: center;
+    background-repeat: no-repeat;
+    top: 70%;
+    padding: 2%;
+    position: absolute;
+  }
+  
+  .modal-body > p {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50%;
+    background-color: #1a2236;
+    color: white;
+    font-size: 1em;
+    font-family: "Playfair Display", serif;
+    font-weight: normal;
+    position: relative;
+    background-color: white;
+    padding: 1%;
+    z-index: -9999;
   }
 }
