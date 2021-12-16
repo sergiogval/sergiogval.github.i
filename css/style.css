@@ -212,7 +212,6 @@ span {
   text-align: left;
 }
 
-
 .btn4,
 .homeimg,
 .dotshome,
@@ -659,6 +658,20 @@ footer {
   margin: 0;
   padding: 0 0 8% 0;
   bottom: 0;
+}
+
+#msg-error {
+  font-family: Inter, Arial, sans-serif;
+  color: rgba(255, 0, 0, 0.85);
+  text-decoration: underline;
+  text-align: center;
+}
+
+.form > .email-input-error {
+  font-size: 2em;
+  font-weight: bold;
+  color: rgba(255, 0, 0, 0.85);
+  border-bottom: 1px solid rgba(255, 0, 0, 0.85);
 }
 
 .resume {

@@ -1,17 +1,19 @@
-function message() {
-    const error = document.createElement('P');
-    error.textContent = 'The email should be with lowercase!';
-    error.classList.add('error');
-    const emailH = document.querySelector('.items-form');
-    emailH.appendChild(error);
+const form = document.querySelector('#form');
+const email = document.querySelector('#email');
+const errorMsg = document.querySelector('#msg-error');
+const ERROR_MESSAGE = 'Please use lowercase to share your email address.';
+
+function isLowerCase(str) {
+  return str === str.toLowerCase();
+}
+
+form.addEventListener('submit', (event) => {
+  if (!isLowerCase(email.value)) {
+    errorMsg.innerText = ERROR_MESSAGE;
+    email.classList.add('email-input-error');
+    event.preventDefault();
+  } else {
+    errorMsg.innerText = '';
+    email.classList.add('email-input-error');
   }
-  
-  const form = document.querySelector('.form');
-  const email = document.querySelector('.email');
-  
-  form.addEventListener('submit', (e) => {
-    if (email.value !== email.value.toLowerCase()) {
-      message();
-      e.preventDefault();
-    }
-  });
+});
