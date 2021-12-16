@@ -1,7 +1,6 @@
 const nameI = document.getElementById('name');
 const emails = document.getElementById('email');
 const message = document.getElementById('message');
-const submit = document.getElementById('submit');
 
 function saveLocalStore() {
   const data = {
@@ -11,7 +10,9 @@ function saveLocalStore() {
   };
   localStorage.setItem('data', JSON.stringify(data));
 }
-submit.addEventListener('click', saveLocalStore);
+nameI.addEventListener('input', saveLocalStore);
+emails.addEventListener('input', saveLocalStore);
+message.addEventListener('input', saveLocalStore);
 
 function getLocalStorage() {
   if (localStorage.getItem('data')) {
