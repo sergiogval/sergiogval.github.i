@@ -1,6 +1,5 @@
 // object constructor function
-function Projects(id, name, description, image, languages, demo, source) {
-  this.id = id;
+const Projects = function (name, description, image, languages, demo, source) {
   this.name = name;
   this.description = description;
   this.image = image;
@@ -19,3 +18,25 @@ const project06 = new Projects(6, 'This project', 'This is my portfolio and it i
 
 // objects array
 const myProjects = [project01, project02, project03, project04, project05, project06];
+
+const arr = myProjects.length;
+const modalTitle = document.querySelector('#modaltitle');
+const modalDescription = document.querySelector('#modalDescription${i}');
+const modalImage = document.querySelector(`modalImage${i}`);
+const modalLanguages = document.querySelector(`modalLanguages${i}`);
+const modalDemo = document.querySelector(`modalDemo${i}`);
+const modalSource = document.querySelector(`modalSource${i}`);
+
+function populateModals() {
+  for (let i = 0; i <= arr; i++) {
+    modalTitle.innerHTML = myProjects[i].name;
+    modalDescription.innerHTML = myProjects[i].description;
+    modalImage.src = myProjects[i].image;
+    modalLanguages.innerHTML = myProjects[i].languages;
+    modalDemo.innerHTML = myProjects[i].demo;
+    modalSource.innerHTML = myProjects[i].source;
+  };
+}
+populateModals();
+
+// Create a function closes the modal when the user clicks on the close button
