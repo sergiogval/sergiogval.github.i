@@ -250,7 +250,8 @@
       <label class="message-label" for="message">Message</label>
       <textarea name="message" class="message" id="message" placeholder="  Enter your message here..." required
         maxlength="500"></textarea>
-      <input type="submit" class="btn4" value="Start collaboration" />
+      <div id="msg-error"></div>
+      <input id="submit" type="submit" class="btn4" value="Start collaboration" />
     </fieldset>
   </form>
   <footer id="footer">
@@ -290,7 +291,9 @@
       </li>
     </ul>
   </footer>
+  <script src="formV.js"></script>
   <script src="main.js"></script>
+  <script src="localStorage.js"></script>
 </body>
 
 </html>
