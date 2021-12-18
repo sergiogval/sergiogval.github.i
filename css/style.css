@@ -3,6 +3,7 @@
 
 html {
   box-sizing: border-box;
+  overflow: scroll;
 }
 
 *,
@@ -17,7 +18,7 @@ body {
   line-height: 1.6;
   font-family: "Poppins", sans-serif;
   outline: none;
-  overflow: scroll;
+  
   font-size: 62.8%;
 }
 
@@ -57,7 +58,6 @@ nav {
   padding: 0;
   top: 5%;
   box-sizing: inherit;
-  z-index: -100;
 }
 
 span {
@@ -80,7 +80,7 @@ span {
   justify-content: center;
   align-items: end;
   height: 88vh;
-  width: 100%;
+  width: 100vw;
   display: none;
   position: fixed;
   opacity: 1;
@@ -94,7 +94,6 @@ span {
   justify-content: center;
   height: 50vh;
   top: 5vh;
-  z-index: 1;
   background-image:
     url('../images/dots-mobile.png'),
     url('../images/dots-mobile.png');
@@ -142,7 +141,6 @@ span {
   margin-left: 0%;
   right: 84%;
   left: 2px;
-  z-index: 10;
   position: absolute;
 }
 
@@ -150,7 +148,6 @@ span {
   margin-right: -50%;
   top: 0;
   left: 50px;
-  z-index: 10;
   position: absolute;
 }
 
@@ -158,7 +155,6 @@ span {
   top: 0;
   margin-left: 10%;
   left: 64.5%;
-  z-index: -10;
   position: relative;
 }
 
@@ -166,7 +162,6 @@ span {
   margin-right: -101%;
   top: 0;
   left: -2px;
-  z-index: -10;
   position: relative;
 }
 
@@ -182,109 +177,6 @@ span {
   padding: 1.3em;
   width: 100%;
 }
-
-.modal-template  {
-  position: absolute;
-  width: 100vw;
-  min-height: min-content;
-  background-color: white;
-  z-index: 10;
-  /* display: none; */
-  flex-direction: row;
-}
-
-.modal-content {
-  width: 100%;
-  height: 100%;
-  position: initial;
-  margin: 0;
-  padding: 0;
-  background-color: white;
-}
-
-.modal-title {
-  font-size: 2.5em;
-  font-family: "Playfair Display", serif;
-  font-weight: normal;
-  text-align: center;
-  justify-content: center;
-  text-align: center;
-  width: 100%;
-  align-items: center;
-  display: flex;
-  flex-wrap: nowrap;
-  position: absolute;
-}
-
-.modal-badges {
-  display: flex;
-  flex-direction: row !important;
-  list-style: none;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 10vh;
-  font-size: 0.5em;
-  font-family: "Playfair Display", serif;
-  font-weight: normal;
-  position: absolute;
-  padding: 1%;
-}
-
-.modal-close {
-  display: flex;
-  position: absolute;
-  right: 3em;
-  top: 3em;
-  Z-index: 9999;
-  margin: 0;
-  padding: 0;
-}
-
-.modal-img {
-  width: 86vw;
-  height: 50vw;
-  background-position: center;
-  background-repeat: no-repeat;
-  top: 70%;
-  padding: 2%;
-  position: absolute;
-}
-
-.modal-body {
-  position: absolute;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  color: #1a2236;
-  font-size: 1em;
-  font-family: "Playfair Display", serif;
-  font-weight: normal;
-  background-color: white;
-}
-
-.modal-body p {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  padding: 1%;
-}
-
-.modal-footer {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  font-size: 0.5em;
-  font-family: "Playfair Display", serif;
-  font-weight: normal;
-  position: absolute;
-  padding: 1%;
-}
-
-
 
 .home {
   display: flex;
@@ -863,7 +755,6 @@ li > a:active {
     background-color: #fff;
     box-sizing: content-box;
     height: 7vh;
-    z-index: -100;
   }
 
   .logo,
@@ -878,14 +769,15 @@ li > a:active {
     display: flex;
     flex-direction: row;
     height: 7vh;
-    width: 40vw;
+    width: 100vw;
     justify-content: space-around;
     align-items: center;
     margin: 0 !important;
     padding: 0;
-    z-index: 100;
     top: 0;
   }
+
+  
 
   .container {
     display: flex;
@@ -910,7 +802,6 @@ li > a:active {
     box-sizing: border-box;
     margin-top: 0;
     background-image: none;
-    z-index: -100;
   }
 
   .home > * {
@@ -1012,7 +903,6 @@ li > a:active {
     right: 50%;
     width: 50%;
     box-sizing: border-box;
-    z-index: -100;
   }
 
   .homeimg {
@@ -1021,12 +911,10 @@ li > a:active {
     width: 50%;
     padding: 0;
     left: 50%;
-    z-index: -90;
   }
 
   .menu > li > a:hover {
     border-bottom: solid 2px #1a2236;
-    z-index: -100;
   }
 
   .aboutheader {
@@ -1522,7 +1410,6 @@ li > a:active {
     width: 100vw;
     height: 100vh;
     background: black;
-    z-index: 999;
     box-sizing: border-box;
     position: fixed;
     margin: 0;

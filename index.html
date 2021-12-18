@@ -7,6 +7,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>VALERA Inc.</title>
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/modals.css">
   <link rel="icon" href="images/favicon.png">
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-74BVQR0SDN"></script>
@@ -22,21 +23,26 @@
 <body>
 
   <!-- modal template -->
-  <div class="modal-template">
-    <div class="modal-content">
-      <h2 class="modal-title">Modal title</h2>
-      <img src="images/close.png" width="30" class="modal-close" alt="Close"/>
-      <ul class="modal-badge">
-      <li>badge</li>
-      <li>badge</li>
-      <li>badge</li>
+  <div id="modalTemplate">
+    <div id="modalContent">
+      <img src="images/close.png"  id="modalClose" alt="Close" />
+      <h2 id="modalTitle">Modal title</h2>
+      <ul id="modalLanguages">
+        <li id="badge1">badge</li>
+        <li id="badge2">badge</li>
+        <li id="badge3">badge</li>
       </ul>
-    </div>
-    <div class="modal-body">
-      <img src="images/project1.png" class="modal-img"  alt="modal-img"/>
-      <p class="modal-body">Modal body text goes here.</p>
-      <button class="modal-btn btn1">Modal Button</button>
-      <button class="modal-btn btn1">Modal Button</button>
+      <img src="images/project1.png" id="modalImage"  alt="modal-img" />
+      <p id="modalDescription">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
+        eget nunc eget nunc tincidunt aliquam. Sed eget nunc eget
+        nunc tincidunt aliquam. Sed eget nunc eget nunc tincidunt
+        aliquam.lorem ipsum dolor sit amet, consectetur adipisicing elit in reprehenderit in voluptate velit
+        lorem ipsum dolor sit amet, consectetur adipisicing elit in reprehenderit in voluptate velit
+      </p>    </div>
+    <div id="modalBody">
+      <button id="modalDemo">See Live</button>
+      <button id="modalSource">See source</button>
     </div>
   </div>  
   <!-- end modal template -->
@@ -94,7 +100,7 @@
           <li class="language">Ruby on Rails</li>
           <li class="language">Javascript</li>
         </ul>
-        <button class="btn2" type="button" onclick="populateModals();">
+        <button class="btn2" type="button">
           See this project
         </button>
       </div>
