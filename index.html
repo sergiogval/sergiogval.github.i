@@ -7,6 +7,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>VALERA Inc.</title>
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/modals.css">
   <link rel="icon" href="images/favicon.png">
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-74BVQR0SDN"></script>
@@ -20,6 +21,34 @@
 </head>
 
 <body>
+
+  <!-- modal template -->
+  <div id="modalTemplate">
+    <div id="modalContent">
+      <img src="images/close.png"  id="modalClose" alt="Close" />
+      <h2 id="modalTitle">Modal title</h2>
+      <ul id="modalLanguages">
+        <li id="badge1">badge</li>
+        <li id="badge2">badge</li>
+        <li id="badge3">badge</li>
+      </ul>
+      <img src="images/project1.png" id="modalImage"  alt="modal-img" />
+      <p id="modalDescription">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
+        eget nunc eget nunc tincidunt aliquam. Sed eget nunc eget
+        nunc tincidunt aliquam. Sed eget nunc eget nunc tincidunt
+        aliquam.lorem ipsum dolor sit amet, consectetur adipisicing elit in reprehenderit in voluptate velit
+        lorem ipsum dolor sit amet, consectetur adipisicing elit in reprehenderit in voluptate velit
+      </p>    </div>
+    <div id="modalBody">
+      <button id="modalDemo" type="button">See Live</button>
+      <button id="modalSource" type="button">See source</button>
+    </div>
+  </div>  
+  <!-- end modal template -->
+    
+  
+  <!-- nav section start -->
   <header id="home">
     <nav>
       <div class="logo">
@@ -41,6 +70,8 @@
       </button>
     </nav>
   </header>
+  <!-- nav section end -->
+  <!-- landpage start here -->
   <section class="home">
     <div class="desktophome">
       <h1 class="nombre"> Sergio<br> Valadez </h1>
@@ -56,25 +87,24 @@
       <img class="homeimg" src="images/landingdesk.png" alt="landingdesk" />
     </div>
   </section>
+  <!-- Land page end -->
+  <!-- Portfolio sections start here -->
   <section class="projects" id="projects">
     <h1 class="projects-title">Projects</h1>
-
     <img src="images/project1.png" width="750" class="i1" alt="project1">
     <div class="one projectcard">
       <div class="project-summary">
-
         <h2>Project's name goes here</h2>
         <ul class="languagebadge">
           <li class="language">HTML/CSS</li>
           <li class="language">Ruby on Rails</li>
           <li class="language">Javascript</li>
         </ul>
-        <button class="btn2" type="button">
+        <button class="btn2" id="openModal1" type="button">
           See this project
         </button>
       </div>
     </div>
-
     <img src="images/project2.png" width="750" class="i2" alt="project1">
     <div class="two projectcard">
       <div class="project-summary">
@@ -89,7 +119,6 @@
         </button>
       </div>
     </div>
-
     <img src="images/project3.png" width="750" class="i3" alt="project1">
     <div class="three projectcard">
       <div class="project-summary">
@@ -104,7 +133,6 @@
         </button>
       </div>
     </div>
-
     <img src="images/project4.png" width="750" class="i4" alt="project1">
     <div class="four projectcard">
       <div class="project-summary">
@@ -119,7 +147,6 @@
         </button>
       </div>
     </div>
-
     <img src="images/project5.png" width="750" class="i5" alt="project1">
     <div class="five projectcard">
       <div class="project-summary">
@@ -134,7 +161,6 @@
         </button>
       </div>
     </div>
-
     <img src="images/project6.png" width="750" class="i6" alt="project1">
     <div class="six projectcard">
       <div class="project-summary">
@@ -155,6 +181,7 @@
     <div id="projectimg3"></div>
     <div id="projectimg4"></div>
   </section>
+  <!-- Portfolio sections end here -->
   <section class="about" id="about">
     <div class="container-about">
       <h2 class="aboutheader">About</h2>
@@ -273,6 +300,7 @@
   <script src="formV.js"></script>
   <script src="main.js"></script>
   <script src="localStorage.js"></script>
+  <script src="constructor.js"></script>
 </body>
 
 </html>
