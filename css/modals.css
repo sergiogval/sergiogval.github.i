@@ -29,16 +29,14 @@ body {
   margin: 0;
   padding: 0;
   display: none;
-  z-index: 1;
 }
 
 #modalContent {
   width: inherit;
-  /* position: absolute; */
-  /* padding: 5%; */
+
   /* display: flex; */
   flex-direction: column;
-  align-items: space-between;
+  align-items: start;
   justify-content: start;
   background-color: white;
   text-align: left;
@@ -50,10 +48,11 @@ body {
   padding: 3%;
   justify-self: right;
   width: 10%;
-  margin: ;
+  margin: 0;
   left: 90%;
   position: absolute;
   cursor: pointer;
+
   /* font-weight: 500; */
 }
 
@@ -72,7 +71,6 @@ body {
   display: flex;
   flex-wrap: wrap;
 }
-
 
 #modalLanguages {
   display: flex;
@@ -121,7 +119,6 @@ body {
   position: relative;
 }
 
-
 #modalDescription {
   display: flex;
   align-items: center;
@@ -150,7 +147,7 @@ body {
   background-color: white;
   color: #1a2236;
   background-size: 6%;
-  background-position:  80% center;
+  background-position: 80% center;
   width: 70%;
   height: 5vh;
   margin-block: 2%;
@@ -164,7 +161,7 @@ body {
   background-color: white;
   color: #1a2236;
   background-size: 7%;
-  background-position:  80% center;
+  background-position: 80% center;
   width: 70%;
   height: 5vh;
   margin-block: 2%;
@@ -175,7 +172,7 @@ body {
 @media (min-width: 992px) {
   #modalTemplate {
     position: fixed;
-    display: flex;
+    display: none;
     flex-direction: column;
     width: 100vw;
     height: 100vh;
@@ -195,10 +192,9 @@ body {
     align-items: flex-start;
     justify-content: start;
     background-color: white;
-    text-justify: left;
     list-style: none;
   }
-  
+
   #modalClose {
     display: flex;
     padding: 3%;
@@ -208,6 +204,7 @@ body {
     left: 90%;
     position: absolute;
     cursor: pointer;
+
     /* font-weight: 500; */
   }
 
@@ -250,6 +247,4 @@ body {
     padding: 2%;
     width: 100%;
   }
-
 }
-    

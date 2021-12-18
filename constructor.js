@@ -1,13 +1,15 @@
 // object constructor function
-const Projects = function (id, name, description, image, languages, demo, source) {
-  this.id = id;
-  this.name = name;
-  this.description = description;
-  this.image = image;
-  this.languages = languages;
-  this.demo = demo;
-  this.source = source;
-};
+class Projects {
+  constructor(id, name, description, image, languages, demo, source) {
+    this.id = id;
+    this.name = name;
+    this.description = description;
+    this.image = image;
+    this.languages = languages;
+    this.demo = demo;
+    this.source = source;
+  }
+}
 
 // objects populated
 const project01 = new Projects(1, 'Empezando a programar', 'This project is about some tests I did with no idea about what I was doing', '/images/project1.png', ['HTML', 'CSS', 'JS'], 'demo', 'source');
@@ -29,37 +31,25 @@ const modalImage = document.querySelector('#modalImage');
 const modalLanguages = document.getElementById('modalLanguages').children;
 const modalDemo = document.querySelector('#modalDemo');
 const modalSource = document.querySelector('#modalSource');
-const openModals = document.querySelectorAll('.bnt2');
+const openModal = document.getElementById('openModal');
 const modalCloser = document.querySelector('#modalClose');
 const badges = modalLanguages.lenght;
-for (let i = 0; i < badges; i++) {
-  modalLanguages[i].innerText = myProjects[i].languages;
+for (let i = 0; i < badges; i += 1) {
+  modalLanguages[i].innerText = myProjects[i].badges;
 }
 
-function populateModals() {
-  modalTitle.innerText = myProjects[i].name;
-  modalDescription.innerText = myProjects[i].description;
-  modalImage.src = myProjects[i].image;
-  modalLanguages.innerText = myProjects[i].languages;
-  modalDemo.innerText = myProjects[i].demo;
-  modalSource.innerText = myProjects[i].source;
-  for (let i = 0; i <= arr; i++) {
+openModal.addEventListener('click', () => {
+  modalTemplate.style.display = 'flex';
+  for (let i = 0; i < arr; i += 1) {
+    modalTitle.innerText = myProjects[i].name;
+    modalDescription.innerText = myProjects[i].description;
+    modalImage.src = myProjects[i].image;
+    modalDemo.innerText = myProjects[i].demo;
+    modalSource.innerText = myProjects[i].source;
   }
-}
-
-function openModals() {
-addEventListener('click', () => {
-  // for (let i = 0; i <= arr; i++) {
-  modalTemplate.style.display = 'block';
-  populateModals();
 });
-
-// function openModal() {
-//   const modal = document.querySelector('#modal');
-//   modal.style.display = 'block';
-// }
 
 // Create a function closes the modal when the user clicks on the close button
 modalCloser.addEventListener('click', () => {
   modalTemplate.style.display = 'none';
-})
+});
